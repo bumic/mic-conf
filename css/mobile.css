@@ -1,0 +1,145 @@
+
+@media screen and (max-width: 750px) { 
+
+	:root {
+		--nav-width: 0;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.section-head {
+		margin: 0 30px;
+	}
+		
+	/*--------------------
+					Nav
+	--------------------*/
+
+	nav {
+		z-index: 10;
+	}
+
+	/* hidden nav */
+	
+	nav#hidden-nav {
+		top: initial;
+		bottom: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 35px;
+    margin: 25px;
+    box-shadow: #151c3e 0px 0px 7px;
+	}
+
+	nav#hidden-nav ul li {
+		margin-bottom: 5px;
+	}
+
+	/* viewable nav */
+
+	nav#viewable-nav {
+		width: 45%;
+		min-width: 250px;
+	}
+
+	/*--------------------
+					Jumbo
+	--------------------*/
+
+	.jumbo .container {
+		align-items: inherit;
+		width: 85%;
+	}
+
+	.jumbo .logo {
+		margin: 20px 0;
+	}
+
+	.jumbo .cta {
+		margin: 0 0 50px 0;
+	}
+
+	.jumbo .cta a {
+		padding: 20px 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	/*--------------------
+			 Speakers
+	--------------------*/
+
+	#speakers .speaker-grid .mobile-reverse {
+		flex-direction: column-reverse;
+	}
+
+	.speaker-grid .speaker-tile {
+		flex-direction: column;
+	}
+
+	.speaker-tile img.speaker {
+		padding: 25px;
+	}
+
+	.info .speaker-head {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	/*--------------------
+		Location Info
+	--------------------*/
+	
+	#location-info .columns {
+		flex-direction: column;
+		align-items: center;
+		padding: 50px 30px;
+	}
+
+	.columns .description, .columns .map {
+		width: 100%;
+		margin: 0;
+	}
+
+	.columns .description {
+		margin-bottom: 30px;
+		padding: 0;
+	}
+
+	.columns .description h3, .columns .description p {
+		margin: 35px;
+	} 
+
+	/*--------------------
+		MIC Schools
+	--------------------*/
+
+	#mic-schools .section-head {
+		margin-bottom: 15px;
+	}
+
+	.school-grid {
+		flex-direction: column;
+		padding: 0 30px;
+	}
+
+	.school-grid .school-tile {
+		margin: 20px 0 0 0;
+		width: 100%;
+	}
+
+	.school-tile .description {
+		padding: 25px 0 15px 0;
+	}
+
+	/*--------------------
+		 Footer
+	--------------------*/
+
+	footer .container .columns {
+		margin: 50px 20px;
+	}
+	
+}
