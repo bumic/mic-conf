@@ -76,6 +76,7 @@ nav {
 	height: 100vh;
 	top: 0;
 	left: 0;
+	cursor: pointer;
 }
 
 nav ul {
@@ -246,69 +247,6 @@ nav#viewable-nav .cta a.cta-button {
 }
 
 /*--------------------
-			 Speakers
---------------------*/
-
-#speakers .container {
-	background: var(--main-purple);
-	color: #fff;
-	padding-bottom: 50px;
-}
-
-#speakers .section-head  {
-	border-bottom: 1px solid #fff;
-}
-
-#speakers .section-head h2 {
-	color: var(--main-purple);
-	background: #fff;
-}
-
-.speaker-grid {
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 15px;
-}
-
-.speaker-grid .speaker-tile {
-	display: flex;
-	align-items: center;
-	color: #fff;
-	width: 100%;
-	padding: 25px;
-}
-
-.speaker-tile .info {
-	margin-left: 20px;
-}
-
-.info .speaker-head {
-	display: flex;
-	align-items: center;
-}
-
-.info .speaker-head p {
-	margin: 0;
-}
-
-.info .speaker-head p.name {
-	margin-right: 10px;
-	text-transform: uppercase;
-	font-weight: 600;
-}
-
-.info .speaker-head p.title {
-	font-size: 14px;
-	text-transform: lowercase;
-	font-weight: 400;
-}
-
-.speaker-tile img.speaker {
-	width: 150px;
-	padding: 0 50px;
-}
-
-/*--------------------
 		Location Info
 --------------------*/
 
@@ -358,20 +296,20 @@ nav#viewable-nav .cta a.cta-button {
 }
 
 /*--------------------
-		MIC Schools
+		Our Community
 --------------------*/
 
-#mic-schools .container {
+#our-community .container {
 	background: var(--main-purple);
 	color: #fff;
 	padding-bottom: 50px;
 }
 
-#mic-schools .section-head  {
+#our-community .section-head  {
 	border-bottom: 1px solid #fff;
 }
 
-#mic-schools .section-head h2 {
+#our-community .section-head h2 {
 	color: var(--main-purple);
 	background: #fff;
 }
@@ -428,7 +366,7 @@ nav#viewable-nav .cta a.cta-button {
 #sponsors .sponsor-grid {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 50px;
 }
 
@@ -457,50 +395,64 @@ footer .container {
 	background: var(--main-purple);
 }
 
-footer .container .columns {
+footer .container .rows {
 	margin: 50px;
+}
+
+footer .top {
 	display: flex;
 	justify-content: space-between;
 }
 
-footer .left .logo {
+footer .top .logo {
 	display: inline-block;
 	background: #fff;
 	padding: 10px;
 	border-radius: 150px;
 }
 
-footer .left .logo img {
+footer .top .logo img {
 	width: 100px;
 }
 
-footer .left p.copyright {
+footer .bottom {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+
+footer .bottom p.copyright {
 	color: #fff;
 	font-size: 12px;
 	text-transform: uppercase;
 	margin-bottom: 0;
 }
 
-footer .right {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-end;
+footer .bottom a.code-of-conduct {
+	color: #fff;
+	font-size: 14px;
+	padding-bottom: 2px; 
+	border-bottom: 1px solid #fff;
 }
 
-footer .right .cta {
+footer .bottom a.code-of-conduct:hover {
+	border-bottom: none;
+}
+
+footer .bottom .cta {
 	display: flex;
 }
 
-footer .right .cta a:first-child {
+footer .bottom .cta a:first-child {
 	margin-right: 10px;
 }
 
-footer .right .social-links a:first-child > img {
+footer .bottom .social-links a:first-child > img {
 	margin-left: 0;
 }
 
-footer .right .social-links a img{
+footer .bottom .social-links a img{
 	width: 40px;
 	margin-left: 5px;
 }
