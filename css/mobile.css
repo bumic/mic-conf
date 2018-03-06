@@ -26,11 +26,11 @@
 	nav#hidden-nav {
 		top: initial;
 		bottom: 0;
-    height: 60px;
-    width: 60px;
-    border-radius: 35px;
-    margin: 25px;
-    box-shadow: #151c3e 0px 0px 7px;
+		height: 60px;
+		width: 60px;
+		border-radius: 35px;
+		margin: 25px;
+		box-shadow: #151c3e 0px 0px 7px;
 	}
 
 	nav#hidden-nav ul li {
@@ -65,27 +65,6 @@
 		padding: 20px 0;
 		text-align: center;
 		width: 100%;
-	}
-
-	/*--------------------
-			 Speakers
-	--------------------*/
-
-	#speakers .speaker-grid .mobile-reverse {
-		flex-direction: column-reverse;
-	}
-
-	.speaker-grid .speaker-tile {
-		flex-direction: column;
-	}
-
-	.speaker-tile img.speaker {
-		padding: 25px;
-	}
-
-	.info .speaker-head {
-		flex-direction: column;
-		align-items: flex-start;
 	}
 
 	/*--------------------
@@ -138,8 +117,20 @@
 		 Footer
 	--------------------*/
 
-	footer .container .columns {
+	footer .container .rows {
 		margin: 50px 20px;
+	}
+
+	footer .rows .top {
+		align-items: center;
+	}
+
+	footer .rows .bottom {
+		flex-direction: column-reverse;
+	}
+
+	footer .bottom a.code-of-conduct {
+		margin-top: 12px;
 	}
 	
 }
