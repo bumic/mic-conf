@@ -12,6 +12,10 @@
 	.section-head {
 		margin: 0 30px;
 	}
+
+	body {
+		cursor: pointer; /* To register click event on iphone */
+	}
 		
 	/*--------------------
 					Nav
@@ -68,6 +72,39 @@
 	}
 
 	/*--------------------
+			About
+	--------------------*/
+
+	#about .about-conference, .about-mic {
+		padding: 0 30px;
+	}
+
+	/*--------------------
+		 Footer
+	--------------------*/
+
+	footer .container .rows {
+		margin: 50px 20px;
+	}
+
+	footer .rows .top {
+		align-items: center;
+	}
+
+	footer .rows .bottom {
+		flex-direction: column-reverse;
+	}
+
+	footer .bottom a.code-of-conduct {
+		margin-top: 12px;
+	}
+	
+}
+
+/* For more compressed elements */
+
+@media screen and (max-width: 1000px) { 
+	/*--------------------
 		Location Info
 	--------------------*/
 	
@@ -88,7 +125,7 @@
 	}
 
 	.columns .description h3, .columns .description p {
-		margin: 35px;
+		margin: 35px 25px;
 	} 
 
 	/*--------------------
@@ -112,25 +149,4 @@
 	.school-tile .description {
 		padding: 25px 0 15px 0;
 	}
-
-	/*--------------------
-		 Footer
-	--------------------*/
-
-	footer .container .rows {
-		margin: 50px 20px;
-	}
-
-	footer .rows .top {
-		align-items: center;
-	}
-
-	footer .rows .bottom {
-		flex-direction: column-reverse;
-	}
-
-	footer .bottom a.code-of-conduct {
-		margin-top: 12px;
-	}
-	
 }
