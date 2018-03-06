@@ -247,12 +247,42 @@ nav#viewable-nav .cta a.cta-button {
 }
 
 /*--------------------
-		Location Info
+		About
 --------------------*/
 
-#location-info .container {
-	border: 1px solid var(--main-purple);
+#about .container {
+	background: var(--main-purple);
+	color: #fff;
+	padding-bottom: 50px;
 }
+
+#about .section-head {
+	border-bottom: 1px solid #fff;
+}
+
+#about .section-head h2 {
+	color: var(--main-purple);
+	background: #fff;
+}
+
+#about .about-conference {
+	margin: 50px 0;
+}
+
+#about .about-conference, .about-mic {
+	padding: 0 50px;
+}
+
+#about h3 {
+	font-size: 1.4em;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 15px;
+	margin: 0 0 10px 0;
+}
+
+/*--------------------
+		Location Info
+--------------------*/
 
 #location-info .section-head  {
 	border-bottom: 1px solid var(--main-purple);
