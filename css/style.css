@@ -446,13 +446,13 @@ nav#viewable-nav .cta a.cta-button {
 	margin-right: 40px;
 }
 
-#committee .columns .member {
+#committee .columns .member, #committee .columns .members {
 	display: flex;
 	justify-content: space-between;
 	margin: 10px 0;
 }
 
-#committee .columns .member .title {
+#committee .columns .member .title, #committee .columns .members .title {
 	font-weight: 600;
 	font-size: 16px;
 	margin-bottom: 5px;
