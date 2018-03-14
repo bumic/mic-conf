@@ -413,6 +413,55 @@ nav#viewable-nav .cta a.cta-button {
 	justify-content: center;
 	padding: 50px 0;
 }
+
+/*--------------------
+			committee
+--------------------*/
+
+#committee .container {
+	background: var(--main-purple);
+	color: #fff;
+	padding-bottom: 50px;
+}
+
+#committee .section-head  {
+	border-bottom: 1px solid #fff;
+}
+
+#committee .section-head h2 {
+	color: var(--main-purple);
+	background: #fff;
+}
+
+#committee .columns {
+	display: flex;
+	padding: 25px 50px 0 50px;
+}
+
+#committee .columns .left, #committee .columns .right {
+	width: calc(50% - 20px);
+}
+
+#committee .columns .left {
+	margin-right: 40px;
+}
+
+#committee .columns .member {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+#committee .columns .member .title {
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 5px;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #fff;
+	display: inline-block;
+}
+
+
 /*--------------------
 			Footer
 --------------------*/
@@ -422,7 +471,7 @@ footer {
 }
 
 footer .container {
-	background: var(--main-purple);
+	color: var(--main-purple);
 }
 
 footer .container .rows {
@@ -437,7 +486,7 @@ footer .top {
 footer .top .logo {
 	display: inline-block;
 	background: #fff;
-	padding: 10px;
+	padding: 15px;
 	border-radius: 150px;
 }
 
@@ -453,21 +502,16 @@ footer .bottom {
 }
 
 footer .bottom p.copyright {
-	color: #fff;
+	font-weight: 600;
 	font-size: 12px;
 	text-transform: uppercase;
 	margin-bottom: 0;
 }
 
 footer .bottom a.code-of-conduct {
-	color: #fff;
+	color: var(--main-purple);
+	font-weight: 600;
 	font-size: 14px;
-	padding-bottom: 2px; 
-	border-bottom: 1px solid #fff;
-}
-
-footer .bottom a.code-of-conduct:hover {
-	border-bottom: none;
 }
 
 footer .bottom .cta {
