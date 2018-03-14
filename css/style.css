@@ -109,11 +109,11 @@ nav#hidden-nav ul li {
 	border-radius: 2px;
 }
 
-nav#hidden-nav ul li:first-child {
+nav#hidden-nav ul li:first-child, nav#hidden-nav ul li:last-child {
 	display: none;
 }
 
-nav#hidden-nav ul li:last-child {
+nav#hidden-nav ul li:last-child, nav#hidden-nav ul li:nth-child(5) {
 	margin: 0;
 }
 
