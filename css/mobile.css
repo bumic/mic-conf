@@ -41,14 +41,6 @@
 		margin-bottom: 5px;
 	}
 
-	nav#hidden-nav ul li:last-child {
-		display: none;
-	}
-
-	nav#hidden-nav ul li:nth-child(5) {
-		margin-bottom: 0
-	}
-
 	/* viewable nav */
 
 	nav#viewable-nav {
