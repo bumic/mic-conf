@@ -41,6 +41,14 @@
 		margin-bottom: 5px;
 	}
 
+	nav#hidden-nav ul li:last-child {
+		display: none;
+	}
+
+	nav#hidden-nav ul li:nth-child(5) {
+		margin-bottom: 0
+	}
+
 	/* viewable nav */
 
 	nav#viewable-nav {
@@ -148,5 +156,27 @@
 
 	.school-tile .description {
 		padding: 25px 0 15px 0;
+	}
+
+	/*--------------------
+				Committee
+	--------------------*/
+
+	#committee .columns {
+		flex-direction: column;
+		padding: 20px 30px 0 30px;
+	}
+
+	#committee .columns .left, #committee .columns .right {
+		width: 100%;
+		margin: 0;
+	}
+
+	#committee .columns .right .member:first-child {
+		margin-top: 0;
+	}
+
+	#committee .columns .member .title {
+		font-size: 15px;
 	}
 }
