@@ -397,6 +397,7 @@ nav#viewable-nav .cta a.cta-button {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 	padding: 50px;
 }
 
