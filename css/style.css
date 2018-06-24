@@ -204,7 +204,7 @@ nav#viewable-nav .cta a.cta-button {
 }
 
 .jumbo .logo img {
-	width: 105px;
+	width: 55px;
 }
 
 .heading {
@@ -409,6 +409,10 @@ nav#viewable-nav .cta a.cta-button {
 	width: 100px;
 }
 
+.sponsor-grid .sponsor-tile img.tier-one {
+	width: 150px;
+}
+
 .become-sponsor {
 	display: flex;
 	justify-content: center;
@@ -492,7 +496,7 @@ footer .top .logo {
 }
 
 footer .top .logo img {
-	width: 100px;
+	width: 60px;
 }
 
 footer .bottom {
