@@ -1,0 +1,90 @@
+:root {
+	--main-purple: #545f99;
+}
+
+body {
+	font-family: 'Avenir', 'sans-serif';
+}
+
+a {
+	color: var(--main-purple);
+}
+
+header {
+	margin: 20px 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header div {
+	flex: 1;
+}
+
+header a img {
+	width: 65px;
+}
+
+main {
+	margin: 0 auto;
+	margin-bottom: 40px;
+	max-width: 850px;
+}
+
+main h2 {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+main p {
+	font-size: 16px;
+}
+
+#submission-policies {
+	margin-bottom: 30px;
+}
+
+#submission-policies #contact-info p {
+	margin: 0;
+}
+
+#abstracts .p-btn-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+
+#abstracts .p-btn-head .cta-button {
+	margin: 0;
+	display: inline-block;
+	padding: 12px 25px;
+}
+
+/*--------------------
+				Mobile
+--------------------*/
+
+
+@media screen and (max-width: 900px) {
+	
+	main {
+		margin: 0 30px;
+	}
+
+}
+
+@media screen and (max-width: 550px) {
+
+	#abstracts .p-btn-head {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	
+	#abstracts .p-btn-head .cta-button {
+		margin: 0;
+		padding: 12px 25px;
+    text-align: center;
+	}
+
+}
