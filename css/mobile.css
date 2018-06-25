@@ -63,12 +63,17 @@
 
 	.jumbo .cta {
 		margin: 0 0 50px 0;
+		flex-direction: column;
 	}
 
 	.jumbo .cta a {
 		padding: 20px 0;
 		text-align: center;
 		width: 100%;
+	}
+
+	.jumbo .cta a:first-child {
+		margin: 0 0 20px 0;
 	}
 
 	/*--------------------

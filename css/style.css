@@ -244,6 +244,11 @@ nav#viewable-nav .cta a.cta-button {
 .jumbo .cta {
 	margin-left: auto;
 	margin-bottom: 80px;
+	display: flex;
+}
+
+.cta a:first-child {
+	margin-right: 20px;
 }
 
 /*--------------------
