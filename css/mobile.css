@@ -106,7 +106,7 @@
 	
 }
 
-@media screen and (max-width: 1055px) {
+@media screen and (max-width: 1175px) {
 	/*--------------------
 				Committee
 	--------------------*/
@@ -183,7 +183,7 @@
 	}
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 450px) {
 	#committee .columns .members, #committee .columns .member {
 		flex-direction: column;
 	}
