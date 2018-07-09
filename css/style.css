@@ -410,12 +410,12 @@ nav#viewable-nav .cta a.cta-button {
 	padding: 20px 50px;
 }
 
-.sponsor-grid .sponsor-tile img {
-	width: 100px;
-}
-
 .sponsor-grid .sponsor-tile img.tier-one {
 	width: 150px;
+}
+
+.sponsor-grid .sponsor-tile img.tier-two {
+	width: 110px;
 }
 
 .become-sponsor {
