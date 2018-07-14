@@ -411,11 +411,15 @@ nav#viewable-nav .cta a.cta-button {
 }
 
 .sponsor-grid .sponsor-tile img.tier-one {
-	width: 150px;
+	width: 170px;
 }
 
 .sponsor-grid .sponsor-tile img.tier-two {
-	width: 110px;
+	width: 150px;
+}
+
+.sponsor-grid .sponsor-tile img.tier-three {
+	width: 140px;
 }
 
 .become-sponsor {
