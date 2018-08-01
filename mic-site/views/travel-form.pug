@@ -1,0 +1,118 @@
+html(lang="en")
+	head
+		title MIC Conference Call For Submissions
+		meta(name="viewport" content="width=device-width")
+		link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossorigin='anonymous')
+		link(rel="stylesheet" href="stylesheets/style.css")
+		link(rel="stylesheet" href="stylesheets/mobile.css")
+		link(rel="stylesheet" href="stylesheets/travel-form.css")
+	body
+		header
+			a(href="/")
+				img(src="images/mic-logo.png" alt="MIC Logo")
+			h1 Machine Intelligence Conference Travel Form
+		main
+			form(method="POST" action="/travel-form")
+				.form-group
+					label(for='name') Full Name*
+					input#name.form-control(type='text' placeholder="" name="name" required="")
+				.form-group
+					label(for='institution') Institution*
+					input#institution.form-control(type="text" placeholder="" name="institution" required="")
+				.form-group
+					label(for='event-title') Talk/Workshop Title*
+					input#event-title.form-control(type="text" placeholder="" name="event-title" required="")
+
+				.form-group
+					label(for='depart-code') Departing Airport Code* - don't know? 
+						a(href="https://www.transportation.gov/sites/dot.gov/files/docs/airports_codes.txt" target="_blank" rel="noopener noreferrer") Check here!
+					input#depart-code.form-control(type="text" placeholder="" name="depart-code" required="")
+				.form-group
+					fieldset(disabled='')
+						label(for='arrive-code') Arrival Airport Code*
+						input#arrive-code.form-control(type="text" value="BOS" name="arrive-code" required="")
+				.form-group
+					label(for='depart-time-pref') Departure Time Preference*
+					input#depart-time-pref.form-control(type="text" placeholder="ex. 8am-11am" name="depart-time-pref" required="")
+				.form-group
+					label(for='return-time-pref') Return Time Preference*
+					input#return-time-pref.form-control(type="text" placeholder="ex. 8am-11am" name="return-time-pref" required="")
+				.form-group
+					label(for='seat-pref') Seat Preference*
+					.form-check
+						input#window-radio.form-check-input(type='radio' name='seat-pref' value='window' checked="" required="")
+						label.form-check-label(for='window-radio')
+							| Window
+					.form-check
+						input#aisle-radio.form-check-input(type='radio' name='seat-pref' value='aisle')
+						label.form-check-label(for='aisle-radio')
+							| Aisle
+
+				.form-group
+					label(for='traveler-name') Traveler Full Name*
+					input#traveler-name.form-control(type="text" placeholder="As it appears on a passport" name="traveler-name" required="")
+				.form-group
+					label(for='taveler-address') Traveler Home Address*
+					input#taveler-address.form-control(type="text" placeholder="" name="taveler-address" required="")
+				.form-group
+					label(for='traveler-phone') Traveler Phone Number*
+					input#traveler-phone.form-control(type="tel" placeholder="123-456-7890" name="traveler-phone" required="")
+				.form-group
+					label(for='traveler-dob') Traveler Date of Birth*
+					input#traveler-dob.form-control(type="text" placeholder="MM/DD/YYYY" name="traveler-dob" required="")
+				.form-group
+					label(for='ktn') KTN (Know Traveler Number) - if applicable
+					input#ktn.form-control(type="text", placeholder="", name="ktn")
+				
+				.form-group
+					label(for='seat-pref') Is travel or hotel assistance needed?*
+					.form-check
+						input#no-assist-radio.form-check-input(type='radio' name='needs-assistance' value='no' checked="" required="")
+						label.form-check-label(for='no-assist-radio')
+							| No
+					.form-check
+						input#yes-assist-radio.form-check-input(type='radio' name='needs-assistance' value='yes')
+						label.form-check-label(for='yes-assist-radio')
+							| Yes
+
+				.form-group.hidden#new-question
+					label(for='seat-pref') Please choose which type of assistance is needed. We will be in touch with more information.
+					.form-check
+						input#travel-assist.form-check-input(type='radio' name='type-of-assistance' value="travel" checked=""  required="")
+						label.form-check-label(for='travel-assist')
+							| Travel Assistance
+					.form-check
+						input#yes-assist-radio.form-check-input(type='radio' name='type-of-assistance' value='hotel')
+						label.form-check-label(for='yes-assist-radio')
+							| Hotel Assistance
+
+
+
+				button.cta-button(type='submit') Submit
+
+
+		script(type='text/javascript').
+			var yesAssistRadio = document.getElementById('yes-assist-radio')
+			var noAssistRadio = document.getElementById('no-assist-radio')
+			var newQuestion = document.getElementById('new-question')
+
+			yesAssistRadio.addEventListener('click', () => {
+				if (yesAssistRadio.checked) {
+					newQuestion.classList.remove('hidden')
+				}
+			}, false);
+
+			noAssistRadio.addEventListener('click', () => {
+				if (noAssistRadio.checked) {
+					newQuestion.classList.add('hidden')
+				}
+			}, false);
+			
+		script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
+		script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', crossorigin='anonymous')
+		script(src='javascripts/jquery.plugin.min.js')
+		script(src='javascripts/jquery.dateentry.min.js')
+
+		script(type='text/javascript').
+			$('#traveler-dob').dateEntry({spinnerImage:''})
