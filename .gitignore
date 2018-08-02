@@ -1,3 +1,6 @@
+# Google API Stuff
+/credentials
+
 # Logs
 logs
 *.log
