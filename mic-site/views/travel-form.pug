@@ -18,93 +18,103 @@ html(lang="en")
 					input#name.form-control(type='text' placeholder="" name="name" required="")
 				.form-group
 					label(for='institution') Institution*
-					input#institution.form-control(type="text" placeholder="" name="institution" required="")
+					input#institution.form-control(type="text" placeholder="" name="institution"  required="")
 				.form-group
 					label(for='event-title') Talk/Workshop Title*
-					input#event-title.form-control(type="text" placeholder="" name="event-title" required="")
+					input#event-title.form-control(type="text" placeholder="" name="event_title" required="")
 
 				.form-group
-					label(for='depart-code') Departing Airport Code* - don't know? 
-						a(href="https://www.transportation.gov/sites/dot.gov/files/docs/airports_codes.txt" target="_blank" rel="noopener noreferrer") Check here!
-					input#depart-code.form-control(type="text" placeholder="" name="depart-code" required="")
-				.form-group
-					fieldset(disabled='')
-						label(for='arrive-code') Arrival Airport Code*
-						input#arrive-code.form-control(type="text" value="BOS" name="arrive-code" required="")
-				.form-group
-					label(for='depart-time-pref') Departure Time Preference*
-					input#depart-time-pref.form-control(type="text" placeholder="ex. 8am-11am" name="depart-time-pref" required="")
-				.form-group
-					label(for='return-time-pref') Return Time Preference*
-					input#return-time-pref.form-control(type="text" placeholder="ex. 8am-11am" name="return-time-pref" required="")
-				.form-group
-					label(for='seat-pref') Seat Preference*
+					label(for='seat-pref') Please select assistance needed.
 					.form-check
-						input#window-radio.form-check-input(type='radio' name='seat-pref' value='window' checked="" required="")
-						label.form-check-label(for='window-radio')
-							| Window
-					.form-check
-						input#aisle-radio.form-check-input(type='radio' name='seat-pref' value='aisle')
-						label.form-check-label(for='aisle-radio')
-							| Aisle
-
-				.form-group
-					label(for='traveler-name') Traveler Full Name*
-					input#traveler-name.form-control(type="text" placeholder="As it appears on a passport" name="traveler-name" required="")
-				.form-group
-					label(for='taveler-address') Traveler Home Address*
-					input#taveler-address.form-control(type="text" placeholder="" name="taveler-address" required="")
-				.form-group
-					label(for='traveler-phone') Traveler Phone Number*
-					input#traveler-phone.form-control(type="tel" placeholder="123-456-7890" name="traveler-phone" required="")
-				.form-group
-					label(for='traveler-dob') Traveler Date of Birth*
-					input#traveler-dob.form-control(type="text" placeholder="MM/DD/YYYY" name="traveler-dob" required="")
-				.form-group
-					label(for='ktn') KTN (Know Traveler Number) - if applicable
-					input#ktn.form-control(type="text", placeholder="", name="ktn")
-				
-				.form-group
-					label(for='seat-pref') Is travel or hotel assistance needed?*
-					.form-check
-						input#no-assist-radio.form-check-input(type='radio' name='needs-assistance' value='no' checked="" required="")
-						label.form-check-label(for='no-assist-radio')
-							| No
-					.form-check
-						input#yes-assist-radio.form-check-input(type='radio' name='needs-assistance' value='yes')
-						label.form-check-label(for='yes-assist-radio')
-							| Yes
-
-				.form-group.hidden#new-question
-					label(for='seat-pref') Please choose which type of assistance is needed. We will be in touch with more information.
-					.form-check
-						input#travel-assist.form-check-input(type='radio' name='type-of-assistance' value="travel" checked=""  required="")
+						input#travel-assist.form-check-input(type='checkbox' name='assistance' value='travel')
 						label.form-check-label(for='travel-assist')
-							| Travel Assistance
+							| Travel
 					.form-check
-						input#yes-assist-radio.form-check-input(type='radio' name='type-of-assistance' value='hotel')
-						label.form-check-label(for='yes-assist-radio')
-							| Hotel Assistance
+						input#hotel-assist.form-check-input(type='checkbox' name='assistance' value='hotel')
+						label.form-check-label(for='hotel-assist')
+							| Hotel
+				
+				#hotel-and-travel.hidden
+					.form-group
+						label(for='taveler-address') Traveler Home Address*
+						input#taveler-address.form-control(type="text" placeholder="" name="traveler_address")
+					.form-group
+						label(for='traveler-phone') Traveler Phone Number*
+						input#traveler-phone.form-control(type="tel" placeholder="123-456-7890" name="traveler_phone")
+					.form-group
+						label(for='traveler-dob') Traveler Date of Birth*
+						input#traveler-dob.form-control(type="text" placeholder="MM/DD/YYYY" name="traveler_dob")
 
+				#hotel.hidden
+					.form-group
+						label(for='check-in') Check in Date*
+						input#check-in.form-control(type="text" placeholder="MM/DD/YYYY" name="check_in")
+					.form-group
+						label(for='check-out') Check out Date*
+						input#check-out.form-control(type="text" placeholder="MM/DD/YYYY" name="check_out")
 
+				#travel.hidden
+					.form-group
+						label(for='depart-code') Departing Airport Code* - don't know? 
+							a(href="https://www.transportation.gov/sites/dot.gov/files/docs/airports_codes.txt" target="_blank" rel="noopener noreferrer") Check here!
+						input#depart-code.form-control(type="text" placeholder="" name="depart_code")
+					.form-group
+						fieldset(disabled='')
+							label(for='arrive-code') Arrival Airport Code*
+							input#arrive-code.form-control(type="text" value="BOS" name="arrive_code")
+					.form-group
+						label(for='depart-time-pref') Departure Time Preference*
+						input#depart-time-pref.form-control(type="text" placeholder="ex. 8am-11am" name="depart_time_pref")
+					.form-group
+						label(for='return-time-pref') Return Time Preference*
+						input#return-time-pref.form-control(type="text" placeholder="ex. 8am-11am" name="return_time_pref")
+					.form-group
+						label(for='seat-pref') Seat Preference*
+						.form-check
+							input#window-radio.form-check-input(type='radio' name='seat_pref' value='window')
+							label.form-check-label(for='window-radio')
+								| Window
+						.form-check
+							input#aisle-radio.form-check-input(type='radio' name='seat_pref' value='aisle')
+							label.form-check-label(for='aisle-radio')
+								| Aisle
+					.form-group
+						label(for='ktn') KTN (Know Traveler Number) - if applicable
+						input#ktn.form-control(type="text", placeholder="", name="ktn")
 
 				button.cta-button(type='submit') Submit
 
 
 		script(type='text/javascript').
-			var yesAssistRadio = document.getElementById('yes-assist-radio')
-			var noAssistRadio = document.getElementById('no-assist-radio')
-			var newQuestion = document.getElementById('new-question')
+			var travelAssist = document.getElementById('travel-assist');
+			var hotelAssist = document.getElementById('hotel-assist');
+			
+			var bothQuestions = document.getElementById('hotel-and-travel')
+			var travelQuestions = document.getElementById('travel');
+			var hotelQuestions = document.getElementById('hotel')
 
-			yesAssistRadio.addEventListener('click', () => {
-				if (yesAssistRadio.checked) {
-					newQuestion.classList.remove('hidden')
+
+			travelAssist.addEventListener('click', () => {
+				if (travelAssist.checked) {
+					bothQuestions.classList.remove('hidden');
+					travelQuestions.classList.remove('hidden');
+				} else {
+					travelQuestions.classList.add('hidden');
+					if (!hotelAssist.checked) {
+						bothQuestions.classList.add('hidden');
+					}
 				}
 			}, false);
 
-			noAssistRadio.addEventListener('click', () => {
-				if (noAssistRadio.checked) {
-					newQuestion.classList.add('hidden')
+			hotelAssist.addEventListener('click', () => {
+				if (hotelAssist.checked) {
+					bothQuestions.classList.remove('hidden');
+					hotelQuestions.classList.remove('hidden');
+				} else {
+					hotelQuestions.classList.add('hidden');
+					if (!hotelAssist.checked) {
+						bothQuestions.classList.add('hidden');
+					}
 				}
 			}, false);
 			
@@ -115,4 +125,6 @@ html(lang="en")
 		script(src='javascripts/jquery.dateentry.min.js')
 
 		script(type='text/javascript').
-			$('#traveler-dob').dateEntry({spinnerImage:''})
+			$('#traveler-dob').dateEntry({spinnerImage:''});
+			$('#check-in').dateEntry({spinnerImage:''});
+			$('#check-out').dateEntry({spinnerImage:''});
