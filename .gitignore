@@ -1,5 +1,5 @@
 # Google API Stuff
-/credentials
+credentials/
 
 # Logs
 logs
