@@ -3,6 +3,7 @@ var router = express.Router();
 
 var GoogleSpreadsheet = require('google-spreadsheet');
 var async = require('async');
+var emailUtil = require('../utils/email.js');
 
 router.get('/', function(req, res, next) {
 	res.render('index');
@@ -13,14 +14,13 @@ router.get('/call-for-submissions', function(req, res, next) {
 });
 
 router.get('/travel-form', function(req, res, next) {
-	res.render('travel-form');
+	res.render('travel-form/travel-form');
 });
 
 router.post('/travel-form', function(req, res, next) {
-	console.log(req.body);
-
+	// RECORD INFO
 	// spreadsheet key is from the URL
-	var doc = new GoogleSpreadsheet('1R5POrmPtfcydSeqwP_ut1B_xnEDAGylV-R_FPkbij2U');
+	var doc = new GoogleSpreadsheet(process.env.SPREADSHEET_ID);
 	var sheet;
 
 	async.series([
@@ -43,15 +43,26 @@ router.post('/travel-form', function(req, res, next) {
 				if (err) {step(err)}
 				step();
 			});
-		}
+		}, 
+
+		function sendCopy(step) {
+			if (req.body.email_address != null) {
+				emailUtil.sendTravelCopy(req.body, function(err, info) {
+					if (err) {step(err)}
+					step();
+				});
+			}
+		},
 
 	], function(err){
 			if (err) {
-				res.send('Something went wrong. <strong>Please send an email to ddehueck@bu.edu with the following error information:</strong></br></br>' + err);
+				res.send('<strong>Something went wrong. Please try filling out the form again. If the error persists please send an email to ddehueck@bu.edu with the following error information:</strong></br></br>' + err);
 			} else {
-				res.send('Your information has been recorded. Thank you for your time.');
+				res.render('travel-form/completed');
 			}
 	});
+
+	// SEND EMAILS
 });
 
 

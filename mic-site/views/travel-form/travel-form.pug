@@ -1,0 +1,193 @@
+html(lang="en")
+	head
+		title MIC Conference Travel Form
+		meta(name="viewport" content="width=device-width")
+		link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossorigin='anonymous')
+		link(rel="stylesheet" href="stylesheets/style.css")
+		link(rel="stylesheet" href="stylesheets/mobile.css")
+		link(rel="stylesheet" href="stylesheets/travel-form.css")
+	body
+		header
+			a(href="/")
+				img(src="images/mic-logo.png" alt="MIC Logo")
+			h1 Machine Intelligence Conference Travel Form
+		main
+			form#travel-form(method="POST" action="/travel-form")
+				.form-group
+					label(for='name') Full Name*
+					input#name.form-control(type='text' placeholder="" name="name" required="")
+				.form-group
+					label(for='institution') Institution*
+					input#institution.form-control(type="text" placeholder="" name="institution"  required="")
+				.form-group
+					label(for='event-title') Talk/Workshop Title*
+					input#event-title.form-control(type="text" placeholder="" name="event_title" required="")
+
+				.form-group
+					label(for='seat-pref') Please select assistance needed.
+					.form-check
+						input#travel-assist.form-check-input(type='checkbox' name='assistance' value='travel')
+						label.form-check-label(for='travel-assist')
+							| Travel
+					.form-check
+						input#hotel-assist.form-check-input(type='checkbox' name='assistance' value='hotel')
+						label.form-check-label(for='hotel-assist')
+							| Hotel
+				
+				#hotel-and-travel.hidden
+					.form-group
+						label(for='taveler-address') Traveler Full Home Address*
+						input#taveler-address.form-control(type="text" placeholder="" name="traveler_address")
+					.form-group
+						label(for='traveler-phone') Traveler Phone Number*
+						input#traveler-phone.form-control(type="tel" placeholder="123-456-7890" name="traveler_phone")
+					.form-group
+						label(for='traveler-dob') Traveler Date of Birth*
+						input#traveler-dob.form-control(type="text" placeholder="MM/DD/YYYY" name="traveler_dob")
+
+				#hotel.hidden
+					.form-group
+						label(for='check-in') Check in Date*
+						input#check-in.form-control(type="text" placeholder="MM/DD/YYYY" name="check_in")
+					.form-group
+						label(for='check-out') Check out Date*
+						input#check-out.form-control(type="text" placeholder="MM/DD/YYYY" name="check_out")
+
+				#travel.hidden
+					.form-group
+						label(for='depart-code') Departing Airport Code* - don't know? 
+							a(href="http://www.airportcodes.org/" target="_blank" rel="noopener noreferrer") Check here!
+						input#depart-code.form-control(type="text" placeholder="" name="depart_code")
+					.form-group
+						fieldset(disabled='')
+							label(for='arrive-code') Arrival Airport Code*
+							input#arrive-code.form-control(type="text" value="BOS" name="arrive_code")
+					.form-group
+						label(for='depart-time-pref') Departure Time Preference*
+						input#depart-time-pref.form-control(type="text" placeholder="ex. 8am-11am" name="depart_time_pref")
+					.form-group
+						label(for='return-time-pref') Return Time Preference*
+						input#return-time-pref.form-control(type="text" placeholder="ex. 8am-11am" name="return_time_pref")
+					.form-group
+						label(for='seat-pref') Seat Preference*
+						.form-check
+							input#window-radio.form-check-input(type='radio' name='seat_pref' value='window')
+							label.form-check-label(for='window-radio')
+								| Window
+						.form-check
+							input#aisle-radio.form-check-input(type='radio' name='seat_pref' value='aisle')
+							label.form-check-label(for='aisle-radio')
+								| Aisle
+					.form-group
+						label(for='ktn') KTN (Known Traveler Number) - if applicable
+						input#ktn.form-control(type="text", placeholder="", name="ktn")
+
+				.form-group
+						.form-check
+							input#request-email.form-check-input(type='checkbox' name='wants_email' value='true' checked="")
+							label.form-check-label(for='request-email')
+								| Select to recieve an emailed copy of this form
+				.form-group#email
+						label(for='email-address') Email to receive copy.
+						input#email-address.form-control(type="email" placeholder="" name="email_address")
+
+				button.cta-button(type='submit') Submit
+
+
+		
+			
+		script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
+		script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', crossorigin='anonymous')
+		script(src='javascripts/jquery.plugin.min.js')
+		script(src='javascripts/jquery.dateentry.min.js')
+
+		script(type='text/javascript').
+			var travelAssist = document.getElementById('travel-assist');
+			var hotelAssist = document.getElementById('hotel-assist');
+			var requestEmail = document.getElementById('request-email');
+
+			var bothQuestions = document.getElementById('hotel-and-travel');
+			var travelQuestions = document.getElementById('travel');
+			var hotelQuestions = document.getElementById('hotel');
+			var emailInput = document.getElementById('email');
+
+
+			travelAssist.addEventListener('click', () => {
+				if (travelAssist.checked) {
+					bothQuestions.classList.remove('hidden');
+					travelQuestions.classList.remove('hidden');
+
+					$('#hotel-and-travel').find('input').each(function(){
+						if ($(this).is(':visible')) {
+								$(this).prop('required', true);
+							}
+					});
+
+					$('#travel').find('input').each(function(){
+						if ($(this).is(':visible') && $(this).attr('id') != 'ktn') {
+								$(this).prop('required', true);
+							}
+					});
+
+				} else {
+					travelQuestions.classList.add('hidden');
+					if (!hotelAssist.checked) {
+						bothQuestions.classList.add('hidden');
+
+						$('#travel').find('input').each(function(){
+							$(this).prop('required', false);
+						});
+					}
+				}
+			}, false);
+
+			hotelAssist.addEventListener('click', () => {
+				if (hotelAssist.checked) {
+					bothQuestions.classList.remove('hidden');
+					hotelQuestions.classList.remove('hidden');
+
+					$('#hotel-and-travel').find('input').each(function(){
+						if ($(this).is(':visible')) {
+								$(this).prop('required', true);
+							}
+					});
+
+					$('#hotel').find('input').each(function(){
+						if ($(this).is(':visible')) {
+								$(this).prop('required', true);
+							}
+					});
+
+				} else {
+					hotelQuestions.classList.add('hidden');
+					if (!hotelAssist.checked) {
+						bothQuestions.classList.add('hidden');
+
+						$('#hotel').find('input').each(function(){
+							$(this).prop('required', false);
+						});
+					}
+				}
+			}, false);
+
+			requestEmail.addEventListener('click', () => {
+				if (requestEmail.checked) {
+					emailInput.classList.remove('hidden');
+				} else {
+					emailInput.classList.add('hidden');
+				}
+			}, false);
+
+			$( "#travel-form" ).submit(function(event) {
+				var confirmSubmit = confirm("Please confirm you are ready to submit.");
+				if (!confirmSubmit) {
+					event.preventDefault();
+				}
+			});
+
+
+		script(type='text/javascript').
+			$('#traveler-dob').dateEntry({spinnerImage:''});
+			$('#check-in').dateEntry({spinnerImage:''});
+			$('#check-out').dateEntry({spinnerImage:''});
