@@ -22,6 +22,14 @@ html(lang="en")
 				.form-group
 					label(for='event-title') Talk/Workshop Title*
 					input#event-title.form-control(type="text" placeholder="" name="event_title" required="")
+				.form-group
+						label(for='email-address') Email Address*
+						input#email-address.form-control(type="email" placeholder="" name="email_address" required="")
+				.form-group
+					.form-check
+							input#request-email.form-check-input(type='checkbox' name='wants_email' value='true' checked="")
+							label.form-check-label(for='request-email')
+								| Select to recieve an emailed copy of this form.
 
 				.form-group
 					label(for='seat-pref') Please select assistance needed.
@@ -82,15 +90,6 @@ html(lang="en")
 						label(for='ktn') KTN (Known Traveler Number) - if applicable
 						input#ktn.form-control(type="text", placeholder="", name="ktn")
 
-				.form-group
-						.form-check
-							input#request-email.form-check-input(type='checkbox' name='wants_email' value='true' checked="")
-							label.form-check-label(for='request-email')
-								| Select to recieve an emailed copy of this form
-				.form-group#email
-						label(for='email-address') Email to receive copy.
-						input#email-address.form-control(type="email" placeholder="" name="email_address")
-
 				button.cta-button(type='submit') Submit
 
 
@@ -138,23 +137,6 @@ html(lang="en")
 				}
 				applyRequired();
 			}, false);
-
-			requestEmail.addEventListener('change', () => {
-				if (requestEmail.checked) {
-					emailInput.classList.remove('hidden');
-					$('#email-address').prop('required', true);
-				} else {
-					emailInput.classList.add('hidden');
-					$('#email-address').prop('required', false);
-				}
-			}, false);
-
-			$( "#travel-form" ).submit(function(event) {
-				var confirmSubmit = confirm("Please confirm you are ready to submit.");
-				if (!confirmSubmit) {
-					event.preventDefault();
-				}
-			});
 
 			function applyRequired() {
 				$('#hotel-and-travel').find('input').each(function(){
