@@ -1,29 +1,29 @@
 var nodemailer = require('nodemailer');
+var sgTransport = require('nodemailer-sendgrid-transport');
 var tableify = require('tableify');
 
 
 module.exports = {
 
 	sendTravelCopy: function(reqObj, callback) {
-		var transporter = nodemailer.createTransport({
-			service: 'gmail',
+		var options = {
 			auth: {
-				user: process.env.GMAIL_EMAIL,
-				pass: process.env.GMAIL_PSWD
+				api_user: process.env.SENDGRID_USRNAME,
+				api_key: process.env.SENDGRID_PSWD
 			}
-		});
+		}
 
-		var mailOptions = {
+		var client = nodemailer.createTransport(sgTransport(options));
+
+		var email = {
 			from: 'no-reply@machineintelligence.cc',
 			to: reqObj.email_address,
 			subject: 'Your Travel Form Copy - Machine Intelligence Conference',
 			html: formHtml(reqObj)
 		};
 
-		transporter.sendMail(mailOptions, function(err, info){
-			process.nextTick(function() {
-				callback(err, info);
-			});
+		client.sendMail(email, function(err, info){
+			
 		});
 	},
 }
@@ -48,12 +48,12 @@ function formHtml(reqObj) {
 	}
 
 	for (var key in reqObj) {
-    if (reqObj[key] == '' || removeKeys.includes(key)) {
-        delete reqObj[key];
-    } else {
-    	var newKey = replace[key];
-    	cleanedObj[newKey] = reqObj[key];
-    }
+		if (reqObj[key] == '' || removeKeys.includes(key)) {
+				delete reqObj[key];
+		} else {
+			var newKey = replace[key];
+			cleanedObj[newKey] = reqObj[key];
+		}
 	}
 
 	var ret = '<p>Here is your copy of the submitted travel form for the Machine Intelligence Conference:</p>';

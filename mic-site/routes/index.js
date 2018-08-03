@@ -46,12 +46,13 @@ router.post('/travel-form', function(req, res, next) {
 		}, 
 
 		function sendCopy(step) {
-			if (req.body.email_address != null) {
+			console.log(req.body)
+			if (req.body.wants_email == 'true' && req.body.email_address != '') {
 				emailUtil.sendTravelCopy(req.body, function(err, info) {
 					if (err) {step(err)}
-					step();
 				});
 			}
+			step();
 		},
 
 	], function(err){

@@ -113,69 +113,39 @@ html(lang="en")
 			var emailInput = document.getElementById('email');
 
 
-			travelAssist.addEventListener('click', () => {
+			travelAssist.addEventListener('change', () => {
 				if (travelAssist.checked) {
 					bothQuestions.classList.remove('hidden');
 					travelQuestions.classList.remove('hidden');
-
-					$('#hotel-and-travel').find('input').each(function(){
-						if ($(this).is(':visible')) {
-								$(this).prop('required', true);
-							}
-					});
-
-					$('#travel').find('input').each(function(){
-						if ($(this).is(':visible') && $(this).attr('id') != 'ktn') {
-								$(this).prop('required', true);
-							}
-					});
-
 				} else {
 					travelQuestions.classList.add('hidden');
 					if (!hotelAssist.checked) {
 						bothQuestions.classList.add('hidden');
-
-						$('#travel').find('input').each(function(){
-							$(this).prop('required', false);
-						});
 					}
 				}
+				applyRequired();
 			}, false);
 
-			hotelAssist.addEventListener('click', () => {
+			hotelAssist.addEventListener('change', () => {
 				if (hotelAssist.checked) {
 					bothQuestions.classList.remove('hidden');
 					hotelQuestions.classList.remove('hidden');
-
-					$('#hotel-and-travel').find('input').each(function(){
-						if ($(this).is(':visible')) {
-								$(this).prop('required', true);
-							}
-					});
-
-					$('#hotel').find('input').each(function(){
-						if ($(this).is(':visible')) {
-								$(this).prop('required', true);
-							}
-					});
-
 				} else {
 					hotelQuestions.classList.add('hidden');
-					if (!hotelAssist.checked) {
+					if (!travelAssist.checked) {
 						bothQuestions.classList.add('hidden');
-
-						$('#hotel').find('input').each(function(){
-							$(this).prop('required', false);
-						});
 					}
 				}
+				applyRequired();
 			}, false);
 
-			requestEmail.addEventListener('click', () => {
+			requestEmail.addEventListener('change', () => {
 				if (requestEmail.checked) {
 					emailInput.classList.remove('hidden');
+					$('#email-address').prop('required', true);
 				} else {
 					emailInput.classList.add('hidden');
+					$('#email-address').prop('required', false);
 				}
 			}, false);
 
@@ -185,6 +155,32 @@ html(lang="en")
 					event.preventDefault();
 				}
 			});
+
+			function applyRequired() {
+				$('#hotel-and-travel').find('input').each(function(){
+						if ($(this).is(':visible')) {
+							$(this).prop('required', true);
+						} else {
+							$(this).prop('required', false);
+						}
+					});
+
+					$('#travel').find('input').each(function(){
+						if ($(this).is(':visible') && $(this).attr('id') != 'ktn') {
+							$(this).prop('required', true);
+						} else {
+							$(this).prop('required', false);
+						}
+					});
+
+					$('#hotel').find('input').each(function(){
+						if ($(this).is(':visible')) {
+								$(this).prop('required', true);
+						} else {
+							$(this).prop('required', false);
+						}
+					});
+			}
 
 
 		script(type='text/javascript').

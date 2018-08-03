@@ -17,6 +17,7 @@
     "jade": "^1.11.0",
     "morgan": "~1.9.0",
     "nodemailer": "^4.6.7",
+    "nodemailer-sendgrid-transport": "^0.2.0",
     "pug": "^2.0.0-beta11",
     "serve-favicon": "^2.5.0",
     "tableify": "^1.1.0"
