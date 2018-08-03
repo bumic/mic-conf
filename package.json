@@ -1,0 +1,14 @@
+{
+  "name": "mic-conf-site",
+  "version": "1.0.0",
+  "description": "The website for the Machine Intelligence Community's inaugural conference.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Devin de Hueck",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

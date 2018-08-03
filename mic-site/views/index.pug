@@ -1,0 +1,202 @@
+html(lang="en")
+	head
+		title MIC Conference - Nov. 3rd, 2018
+		meta(name="viewport" content="width=device-width")
+		link(href="https://fonts.googleapis.com/css?family=Lato:100,400,700,900" rel="stylesheet")
+		link(rel="stylesheet" href="stylesheets/style.css")
+		link(rel="stylesheet" href="stylesheets/mobile.css")
+	body
+		nav#hidden-nav
+			ul
+				li
+					h3 Menu
+				li
+					a(href="#about") About
+				li
+					a(href="#location-info") Location Info
+				li
+					a(href="#our-community") Our Community
+				li
+					a(href="#sponsors") Sponsors
+				li
+					a(href="#committee") Conference Committee
+			.cta
+				a.cta-button(href="https://bumic.typeform.com/to/eVgtGg") Attend
+				a.cta-button(href="mailto:sponsors@machineintelligence.cc") Become a Sponsor
+		main
+			#particles-js
+			section.jumbo
+				.container
+					.top
+						.logo
+							img(src="images/mic-logo.png" alt="MIC Conference Logo")
+						.heading
+							.main-heading
+								h1 Machine Intelligence Conference
+							.sub-heading
+								h2 Nov. 3rd, 2018 - 6th Floor of MIT Media Lab
+					.cta
+						a.cta-button(href="https://bumic.typeform.com/to/eVgtGg") Attend
+						a.cta-button(href="/call-for-submissions") Call for Submissions
+			section#about
+				.container
+					.section-head
+						h2 About
+					.about-conference
+						h3 This Conference
+						p
+							| The Machine Intelligence Conference will be held annually by all constituent MIC schools. Our mission for this conference is to democratize machine intelligence, promote diversity, build community, and inspire the next generation of researchers and engineers.
+						p
+							strong Please note: 
+							|  There is a limit of 300 attendees to this inaugural conference. Student sign-ups will be prioritized and non .edu emails will not receive a confirmation email, but will not lose a place in the sign-up queue. Attendees must be 18 years of age or older - attendees in high school will be asked to show a photo ID.
+					.about-mic
+						h3 The Machine Intelligence Community - MIC
+						p
+							| The idea behind the Machine Intelligence Community originated from the MIT Machine Learning Reading Group. The reading group started with students looking for an environment to learn about research advances in machine learning. The Machine Intelligence Community currently has branches at MIT, Boston University, Harvard, and Tufts.
+						p
+							| The Machine Intelligence Community has a set of core values it stands to uphold. All Machine Intelligence Community organizations must uphold these values.
+						p
+							strong 1. Openness.
+							|  The Machine Intelligence Community is inclusive and diverse.
+						p
+							strong 2. Education.
+							|  We aim to provide surface area for intellectual engagement. Our primary focus is teaching members and the community at-large about machine intelligence.
+						p
+							strong 3. Community.
+							|  By doing this, we hope to cultivate and connect communities and like-minded students to accelerate progress in machine intelligence.
+			section#location-info
+				.container
+					.section-head
+						h2 Location Info
+					.columns
+						.description
+							h3 6th Floor of MIT Media Lab
+							p
+								| "The MIT Media Lab is an interdisciplinary research laboratory at the Massachusetts Institute of Technology, growing out of MIT's Architecture Machine Group in the School of Architecture. Its research draws from technology, media, science, art and design. As of 2014, research groups included neurobiology, biologically inspired fabrication, socially engaging robots, emotive computing, bionics, and hyperinstruments" - Wikipedia
+							p
+								strong Address:
+								|  75 Amherst St, Cambridge, MA 02139
+						.map
+							iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.1632077775325!2d-71.08945804902301!3d42.36036094297315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a8b0f310c5%3A0x1a26a6e6bd5f8030!2sMIT+Media+Lab!5e0!3m2!1sen!2sus!4v1518495709713" width="600" height="450" frameborder="0" style="border:0" allowfullscreen="")
+			section#our-community
+				.container
+					.section-head
+						h2 Our Community
+					.school-grid
+						.school-tile
+							.shield
+								a(href="http://machine-intelligence.mit.edu/")
+									img(src="images/mic-schools/mit-logo.gif" alt="MIT Logo")
+							.description
+								p.school-name Massachusetts Institute of Technology
+								p
+									| We are a community of undergraduates aimed at promoting and fostering the growing interest around machine intelligence on campus. We currently hold weekly discussions on the latest papers in the field, and also plan to organize crash courses, host speakers, and arrange competitions around machine intelligence at MIT.
+						.school-tile
+							.shield
+								a(href="http://mic.bu.edu/")
+									img(src="images/mic-schools/bu-logo.png" alt="Boston University Logo")
+							.description
+								p.school-name Boston University
+								p
+									| Boston University Machine Intelligence Community is an organization focused on providing opportunities for undergraduate and graduate students to learn about machine intelligence in a community environment. We are a student-led research group sponsored by Boston University's Rafik B. Hariri Institute for Computing and Computational Science and Engineering, BU Software Application and Innovation Lab (SAIL), and BU Spark.
+						.school-tile
+							.shield
+								a(href="https://harvard-mic.github.io/")
+									img(src="images/mic-schools/harvard-logo.png" alt="Harvard Logo")
+							.description
+								p.school-name Harvard University
+								p
+									| We are a community of undergraduates at Harvard aiming to promote and foster interest in machine learning and artificial intelligence. We host technical workshops on advanced topics in machine learning, work on challenging real-world problems, discuss the current state of the field, and - most importantly - attempt to create a friendly and collaborative environment both for aspiring machine learning researchers and also for people who have just taken their first step into the fascinating and mysterious world of artificial intelligence. We seek to equip everyone with knowledge in machine learning and artificial intelligence and prepare them to face the new wave of the future.
+						.school-tile
+							.shield
+								a(href="https://tufts-mic.github.io/MIC-site/")
+									img(src="images/mic-schools/tufts-logo.png" alt="Tufts logo")
+							.description
+								p.school-name Tufts University
+								p
+									| Tufts offers several courses dealing more broadly with machine learning, but currently no focused curriculum geared towards modern deep learning. Tufts MIC aims to foster interest and research in machine intelligence on campus in an undergraduate-friendly environment. We host workshops and guest lecturers, coordinate group coding projects, and collaborate with the Tufts Machine Learning Reading Group to cover the latest machine intelligence breakthroughs.
+			section#sponsors
+				.container
+					.section-head
+						h2 Thank You to Our Sponsors
+					.sponsor-grid
+						.sponsor-tile
+							a(href="https://www.malong.com/" target="_blank" rel="noopener noreferrer")
+								img.tier-one(src="images/sponsors/malong-technologies-logo.png" alt="Malong Technologies Logo")
+						.sponsor-tile
+							a(href="https://www.intel.com/" target="_blank" rel="noopener noreferrer")
+								img.tier-one(src="images/sponsors/intel-logo.png" alt="Intel Logo")
+						.sponsor-tile
+							a(href="http://www.nvidia.com/" target="_blank" rel="noopener noreferrer")
+								img.tier-two(src="images/sponsors/nvidia-logo.jpg" alt="Nvidia Logo")
+						.sponsor-tile
+							a(href="http://www.facebook.com/" target="_blank" rel="noopener noreferrer")
+								img.tier-two(src="images/sponsors/facebook-logo.jpg" alt="Facebook Logo")
+						.sponsor-tile
+							a(href="https://www.cra.com/" target="_blank" rel="noopener noreferrer")
+								img.tier-three(src="images/sponsors/charles-river-analytics-logo.png" alt="Charles River Analytics Logo")
+					.become-sponsor
+						a.cta-button(href="mailto:sponsors@machineintelligence.cc") Become A Sponsor
+			section#committee
+				.container
+					.section-head
+						h2 Conference Committee
+					.columns
+						.left
+							.members
+								.title Head Coordinators
+								.names Justin Chen, Ajay Jain
+							.member
+								.title Workshop Coordinator and Community Outreach
+								.name Dan Pechi
+							.member
+								.title Panel Coordinator
+								.name Nikhil Murthy, Mirac Suzgun
+							.member
+								.title Website Coordinator
+								.name Devin de Hueck
+						.right
+							.member
+								.title Finance Coordinator
+								.name Isaac Wolverton
+							.member
+								.title Diversity Scholarship Chair
+								.name Chloe Kaubisch
+							.member
+								.title Sponsorship Chair
+								.name Charles Ma
+		footer
+			.container
+				.rows
+					.top
+						.logo
+							img(src="images/mic-logo.png" alt="MIC Conference Logo")
+						.cta
+							a.cta-button(href="https://bumic.typeform.com/to/eVgtGg") Attend
+					.bottom
+						p.copyright © Copyright 2018
+						a.code-of-conduct(href="http://confcodeofconduct.com/")  Conference Code of Conduct
+						.social-links
+							a(href="https://www.facebook.com/events/339954023078301/")
+								img(src="images/social-media-icons/facebook-icon.png" alt="")
+							a(href="https://twitter.com/mic_conf")
+								img(src="images/social-media-icons/twitter-icon.png" alt="")
+							a(href="https://medium.com/mit-mic")
+								img(src="images/social-media-icons/medium-icon.png" alt="")
+		script(src="javascripts/handle-animation.js")
+		script(src="javascripts/particles/particles.min.js")
+		script(src="javascripts/particles/app.js")
+		script.
+			var nav = document.getElementsByTagName('nav')[0];
+			document.onclick = function(e) {
+				if (nav.contains(e.target)) {
+					// Clicked on navbar
+					if (nav.id == 'hidden-nav') {
+						nav.id = 'viewable-nav';
+					}
+				} else {
+					if (nav.id == 'viewable-nav') {
+						nav.id = 'hidden-nav';
+					}
+				}
+			};

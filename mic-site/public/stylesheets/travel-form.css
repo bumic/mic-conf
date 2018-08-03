@@ -1,0 +1,105 @@
+:root {
+	--main-purple: #545f99;
+}
+
+html body {
+	font-family: 'Avenir', 'sans-serif';
+}
+
+a {
+	color: var(--main-purple);
+}
+
+.cta-button {
+	margin-top: 20px;
+	font-family: 'Avenir', 'sans-serif';
+	width: 100%;
+	display: block;
+	border: none;
+	box-shadow: none;
+	outline: none;
+	padding: 15px 55px;
+	border-radius: 0px;
+	background: #e38484;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: .8em;
+	letter-spacing: 1px;
+}
+
+.hidden {
+	display: none;
+}
+
+header {
+	margin: 20px 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header h1 {
+	font-size: 32px;
+	font-weight: 700;
+	margin: 22px 0;
+}
+
+header div {
+	flex: 1;
+}
+
+header a img {
+	width: 65px;
+}
+
+main {
+	margin: 0 auto;
+	margin-bottom: 40px;
+	max-width: 850px;
+}
+
+main h2 {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+main p {
+	font-size: 16px;
+}
+
+main form .form-group input[type="text"], main form .form-group input[type="tel"], main form .form-group input[type="email"] {
+	margin: 10px 0;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	font-family: 'Avenir', sans-serif;
+	font-size: 0.9em;
+}
+
+/*--------------------
+				Mobile
+--------------------*/
+
+
+@media screen and (max-width: 900px) {
+	
+	main {
+		margin: 0 30px;
+	}
+
+}
+
+@media screen and (max-width: 550px) {
+
+	.p-btn-head {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	
+	.p-btn-head .cta-button {
+		margin: 0;
+		padding: 12px 25px;
+    text-align: center;
+	}
+
+}
