@@ -25,7 +25,6 @@ router.post('/travel-form', function(req, res, next) {
 
 	async.series([
 		function setAuth(step) {
-			// see notes below for authentication instructions!
 			var creds = require('../credentials/drive-credentials.json');
 			doc.useServiceAccountAuth(creds, step);
 		},
@@ -39,14 +38,13 @@ router.post('/travel-form', function(req, res, next) {
 		},
 
 		function addRowData(step) {
-			sheet.addRow(req.body, function( err, rows ){
+			sheet.addRow(req.body, function(err, rows){
 				if (err) {step(err)}
 				step();
 			});
 		}, 
 
 		function sendCopy(step) {
-			console.log(req.body)
 			if (req.body.wants_email == 'true' && req.body.email_address != '') {
 				emailUtil.sendTravelCopy(req.body, function(err, info) {
 					if (err) {step(err)}
@@ -62,8 +60,6 @@ router.post('/travel-form', function(req, res, next) {
 				res.render('travel-form/completed');
 			}
 	});
-
-	// SEND EMAILS
 });
 
 
