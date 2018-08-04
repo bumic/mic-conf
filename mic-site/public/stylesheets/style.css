@@ -247,7 +247,7 @@ nav#viewable-nav .cta a.cta-button {
 	display: flex;
 }
 
-.cta a:first-child {
+.jumbo .cta a:first-child {
 	margin-right: 20px;
 }
 
