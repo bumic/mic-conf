@@ -13,6 +13,10 @@ router.get('/call-for-submissions', function(req, res, next) {
 	res.render('call-for-submissions');
 });
 
+router.get('/call-for-submissions.html', function(req, res, next) {
+	res.redirect('/call-for-submissions');
+});
+
 router.get('/travel-form', function(req, res, next) {
 	res.render('travel-form/travel-form');
 });
