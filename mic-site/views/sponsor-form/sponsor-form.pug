@@ -1,0 +1,120 @@
+html(lang="en")
+	head
+		title MIC Conference Sponsor Form
+		meta(name="viewport" content="width=device-width")
+		link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossorigin='anonymous')
+		link(rel="stylesheet" href="stylesheets/style.css")
+		link(rel="stylesheet" href="stylesheets/mobile.css")
+		link(rel="stylesheet" href="stylesheets/form.css")
+	body
+		header
+			a(href="/")
+				img(src="images/mic-logo.png" alt="MIC Logo")
+			h1 Machine Intelligence Conference Sponsor Form
+		main
+			form#sponsor-form(method="POST" action="/sponsor-form")
+				.form-group
+					label(for='company-name') Company Name*
+					input#company-name.form-control(type='text' placeholder="" name="company_name" required="")
+				.form-group
+					label(for='best-contact') Best Contact for Logistics
+					input.best-contact.form-control(type="text" placeholder="Contact Name" name="best_contact_name")
+					input.best-contact.form-control(type="email" placeholder="Contact Email" name="best_contact_email")
+				.form-group
+					label(for='phone') Phone for day-of Coordination
+					input#phone.form-control(type="tel" placeholder="" name="phone_day_of")
+				.form-group
+					label(for='speaker-name') Speaker Name
+					input#speaker-name.form-control(type="text" placeholder="Leave blank if currently undecided" name="speaker_name")
+				.form-group
+					label(for='industry-panel') Would you be interested in putting a speaker on the industry panel? If so, who / what is their role?
+					textarea#industry-panel.form-control(name="industry_panel_response" form="sponsor-form")
+				
+				.form-group
+					p 
+						strong Tier 2 sponsors can select between a workshop and talk, and Tier 3 sponsors can choose up to two workshops, two talks, or one of each. 
+					p Workshops are hands-on walk throughs of a machine learning technique or application -- for example: "Hands-on structured prediction" or "Text classification in PyTorch". Talks are technical presentations about relevant engineering challenges or research. An example talk could be "Low-precision inference in production". For either workshops or talks, you are welcome to include challenges and solutions at your company, or a survey of machine learning projects -- we encourage you to keep it primarily technical, though!
+					p Contact us with any questions. We're also happy to help brainstorm, or ask students about which topics they find interesting.
+				
+				.form-group
+					label(for='talk-ws-title-one') Talk/Workshop One Title
+					input#talk-ws-title-one.form-control(type="text" placeholder="" name="talk_or_ws_one_title")
+				.form-group
+					label(for='talk-ws-desc-one') Talk/Workshop One Description
+					textarea#talk-ws-desc-one.form-control(name="talk_or_ws_one_description" form="sponsor-form")
+				.form-group
+					label Please select if this will be a talk or workshop
+					.form-check
+						input#is-ws-one.form-check-input(type='radio' name='is_talk_or_ws_one' value='workshop')
+						label.form-check-label(for='is-ws-one')
+							| Workshop
+					.form-check
+						input#is-talk-one.form-check-input(type='radio' name='is_talk_or_ws_one' value='talk')
+						label.form-check-label(for='is-talk-one')
+							| Talk
+					
+					p#add-talk.link Add second talk/workshop (for tier 3 only)
+					p#remove-talk.link.hidden Remove second talk/workshop
+
+				#second-talk.hidden
+					.form-group
+						label(for='talk-ws-title-two') Talk/Workshop Two Title
+						input#talk-ws-title-two.form-control(type="text" placeholder="For tier 3 only" name="talk_or_ws_two_title")
+					.form-group
+						label(for='talk-ws-desc-two') Talk/Workshop Two Description
+						textarea#talk-ws-desc-two.form-control(name="talk_or_ws_two_description" placeholder="For tier 3 only" form="sponsor-form")
+					.form-group
+						label Please select if this will be a talk or workshop
+						.form-check
+							input#is-ws-two.form-check-input(type='radio' name='is_talk_or_ws_two' value='workshop')
+							label.form-check-label(for='is-ws-two')
+								| Workshop
+						.form-check
+							input#is-talk-two.form-check-input(type='radio' name='is_talk_or_ws_two' value='talk')
+							label.form-check-label(for='is-talk-two')
+								| Talk
+			
+
+				.form-group
+					.form-check
+						input#request-email.form-check-input(type='checkbox' name='wants_email' value='true')
+						label.form-check-label(for='request-email')
+							| Select to recieve an emailed copy of this form.
+				#email-div.hidden
+					.form-group
+						label(for='form-copy-email-address') Email Address For Form Copy*
+						input#form-copy-email-address.form-control(type="email" placeholder="" name="email_address")
+
+				button.cta-button(type='submit') Submit
+
+		script(type='text/javascript').
+			var addTalk = document.getElementById('add-talk');
+			var removeTalk = document.getElementById('remove-talk');
+			var secondTalk = document.getElementById('second-talk');
+
+			var sendCopy = document.getElementById('request-email');
+			var emailDiv = document.getElementById('email-div');
+			var emailInput = document.getElementById('form-copy-email-address');
+
+
+			addTalk.addEventListener('click', () => {
+				secondTalk.classList.remove('hidden');
+				removeTalk.classList.remove('hidden');
+				addTalk.classList.add('hidden');
+			}, false);
+
+			removeTalk.addEventListener('click', () => {
+				secondTalk.classList.add('hidden');
+				addTalk.classList.remove('hidden');
+				removeTalk.classList.add('hidden');
+			}, false);
+
+			sendCopy.addEventListener('change', () => {
+				if (sendCopy.checked) {
+					emailInput.required = true;
+					emailDiv.classList.remove('hidden');
+				} else {
+					emailInput.required = false;
+					emailDiv.classList.add('hidden');
+				}
+			},false);
