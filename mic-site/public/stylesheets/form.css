@@ -25,6 +25,7 @@ a {
 	text-transform: uppercase;
 	font-size: .8em;
 	letter-spacing: 1px;
+	cursor: pointer;
 }
 
 .hidden {
@@ -67,7 +68,7 @@ main p {
 	font-size: 16px;
 }
 
-main form .form-group input[type="text"], main form .form-group input[type="tel"], main form .form-group input[type="email"] {
+main form .form-group input[type="text"], main form .form-group input[type="tel"], main form .form-group input[type="email"], .form-group textarea {
 	margin: 10px 0;
 	padding: 5px 10px;
 	border: 1px solid #ccc;
@@ -76,8 +77,21 @@ main form .form-group input[type="text"], main form .form-group input[type="tel"
 	font-size: 0.9em;
 }
 
+.link {
+	color: #288eda;
+	cursor: pointer;
+}
+
 /*--------------------
-				Mobile
+     Sponsor Form
+--------------------*/
+
+#add-talk, #remove-talk {
+	margin-top: 15px;
+}
+
+/*--------------------
+      Mobile
 --------------------*/
 
 
