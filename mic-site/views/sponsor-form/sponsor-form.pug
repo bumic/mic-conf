@@ -24,9 +24,6 @@ html(lang="en")
 					label(for='phone') Phone for day-of Coordination
 					input#phone.form-control(type="tel" placeholder="" name="phone_day_of")
 				.form-group
-					label(for='speaker-name') Speaker Name
-					input#speaker-name.form-control(type="text" placeholder="Leave blank if currently undecided" name="speaker_name")
-				.form-group
 					label(for='industry-panel') Would you be interested in putting a speaker on the industry panel? If so, who / what is their role?
 					textarea#industry-panel.form-control(name="industry_panel_response" form="sponsor-form")
 				
@@ -42,6 +39,9 @@ html(lang="en")
 				.form-group
 					label(for='talk-ws-desc-one') Talk/Workshop One Description
 					textarea#talk-ws-desc-one.form-control(name="talk_or_ws_one_description" form="sponsor-form")
+				.form-group
+					label(for='speaker-name-one') Speaker Name for Talk/Workshop One
+					input#speaker-name-one.form-control(type="text" placeholder="Leave blank if currently undecided" name="speaker_name_one")
 				.form-group
 					label Please select if this will be a talk or workshop
 					.form-check
@@ -63,6 +63,9 @@ html(lang="en")
 					.form-group
 						label(for='talk-ws-desc-two') Talk/Workshop Two Description
 						textarea#talk-ws-desc-two.form-control(name="talk_or_ws_two_description" placeholder="For tier 3 only" form="sponsor-form")
+					.form-group
+						label(for='speaker-name-two') Speaker Name for Talk/Workshop Two
+						input#speaker-name-two.form-control(type="text" placeholder="Leave blank if currently undecided" name="speaker_name_two")
 					.form-group
 						label Please select if this will be a talk or workshop
 						.form-check
