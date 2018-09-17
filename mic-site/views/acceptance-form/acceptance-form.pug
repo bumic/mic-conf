@@ -1,0 +1,29 @@
+html(lang="en")
+	head
+		title MIC Conference Acceptance Response Form
+		meta(name="viewport" content="width=device-width")
+		link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossorigin='anonymous')
+		link(rel="stylesheet" href="stylesheets/style.css")
+		link(rel="stylesheet" href="stylesheets/mobile.css")
+		link(rel="stylesheet" href="stylesheets/form.css")
+	body
+		header
+			a(href="/")
+				img(src="images/mic-logo.png" alt="MIC Logo")
+			h1 Machine Intelligence Conference Acceptance Response Form
+		main
+			form#acceptance-form(method="POST" action="/acceptance-form")
+				.form-group
+					label(for='email') Email*
+					input#email.form-control(type='email' placeholder="Please make sure this matches your original application" name="email_address" required="" value=email)
+				.form-group
+					label(for='first-name') First Name*
+					input#first-name.form-control(type='text' placeholder="" name="first_name" required="")
+				.form-group
+					label(for='last-name') Last Name* 
+					input#last-name.form-control(type='text' placeholder="" name="last_name" required="")
+				.form-group
+					label(for='school-name') School Name (optional)
+					input#school-name.form-control(type='text' placeholder="If applicable" name="school")
+
+				button.cta-button(type='submit') Submit

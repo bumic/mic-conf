@@ -48,6 +48,28 @@ module.exports = {
 			
 		});
 	},
+
+	sendConfirmationEmail: function(reqObj, callback) {
+		var options = {
+			auth: {
+				api_user: process.env.SENDGRID_USRNAME,
+				api_key: process.env.SENDGRID_PSWD
+			}
+		}
+
+		var client = nodemailer.createTransport(sgTransport(options));
+
+		var email = {
+			from: 'no-reply@machineintelligence.cc',
+			to: reqObj.email_address,
+			subject: 'Your spot has been reserved for the 2018 Machine Intelligence Conference!',
+			html: confirmationHtml(reqObj)
+		};
+
+		client.sendMail(email, function(err, info){
+			
+		});
+	}
 }
 
 function travelFormHtml(reqObj) {
@@ -118,3 +140,31 @@ function sponsorFormHtml(reqObj) {
 
 	return ret;
 }
+
+function confirmationHtml(reqObj) {
+	var cleanedObj = {}
+	var replace = {
+		email_address: 'Email Address: ',
+		first_name: 'First Name: ',
+		last_name: 'Last Name: ',
+		school: 'School: ',
+	}
+
+	for (var key in reqObj) {
+		if (reqObj[key] == '') {
+				delete reqObj[key];
+		} else {
+			var newKey = replace[key];
+			cleanedObj[newKey] = reqObj[key];
+		}
+	}
+
+	var ret = '<p>Hi '+ reqObj.first_name +', Here is the information your spot is reserved under for the 2018 Machine Intelligence Conference:</p>';
+	ret += tableify(cleanedObj);
+	ret += '<p>Please contact <a href="mailto:conference@machineintelligence.cc">conference@machineintelligence.cc</a> if something needs to be updated or if you have any questions.</p>'
+
+	return ret;
+}
+
+
+
