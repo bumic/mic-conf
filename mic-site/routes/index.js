@@ -113,6 +113,13 @@ router.post('/sponsor-form', function(req, res, next) {
 			step();
 		},
 
+		function notifyMITExecs(step) {
+			emailUtil.notifyConferenceList(req.body, function(err, info) {
+				if (err) {step(err)}
+			});
+			step();
+		},
+
 	], function(err){
 			if (err) {
 				res.send('<strong>Something went wrong. Please try filling out the form again. If the error persists please send an email to ddehueck@bu.edu with the following error information:</strong></br></br>' + err);
@@ -122,6 +129,7 @@ router.post('/sponsor-form', function(req, res, next) {
 	});
 });
 
+// TRAVEL FORM
 router.get('/travel-form', function(req, res, next) {
 	res.render('travel-form/travel-form');
 });

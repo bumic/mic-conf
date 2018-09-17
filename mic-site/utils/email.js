@@ -69,7 +69,29 @@ module.exports = {
 		client.sendMail(email, function(err, info){
 			
 		});
-	}
+	},
+
+	notifyConferenceList: function(reqObj, callback) {
+		var options = {
+			auth: {
+				api_user: process.env.SENDGRID_USRNAME,
+				api_key: process.env.SENDGRID_PSWD
+			}
+		}
+
+		var client = nodemailer.createTransport(sgTransport(options));
+
+		var email = {
+			from: 'no-reply@machineintelligence.cc',
+			to: 'mic-conference@mit.edu',
+			subject: 'A sponsor has just filled out the sponsor form.',
+			text: reqObj.company_name + ' has just filled out the sponsor form. Check out the spreadsheet by conference@machineintelligence.cc for more info.',
+		};
+
+		client.sendMail(email, function(err, info){
+			
+		});
+	},
 }
 
 function travelFormHtml(reqObj) {
@@ -119,9 +141,11 @@ function sponsorFormHtml(reqObj) {
 		industry_panel_response: 'Industry Panel Response: ',
 		talk_or_ws_one_title: 'Talk/Workshop One Title: ',
 		talk_or_ws_one_description: 'Talk/Workshop One Description: ',
+		speaker_name_one: 'Speaker Name for Talk/Workshop One',
 		is_talk_or_ws_one: 'Is Talk or Workshop One: ',
 		talk_or_ws_two_title: 'Talk/Workshop Two Title: ',
 		talk_or_ws_two_description: 'Talk/Workshop Two Description: ',
+		speaker_name_two: 'Speaker Name for Talk/Workshop Two',
 		is_talk_or_ws_two: 'Is Talk or Workshop Two: ',
 	}
 
