@@ -4,9 +4,22 @@ var router = express.Router();
 var GoogleSpreadsheet = require('google-spreadsheet');
 var async = require('async');
 var emailUtil = require('../utils/email.js');
+var fs = require('fs');
 
 router.get('/', function(req, res, next) {
 	res.render('index');
+});
+
+router.get('/schedule', function(req, res, next) {
+	res.render('schedule');
+});
+
+router.get('/schedule.pdf', function(req, res, next) {
+	var file_loc='./public/documents/2018-mic-conference-schedule.pdf';
+  fs.readFile(file_loc, function (err, data){
+     res.contentType("application/pdf");
+     res.send(data);
+  });
 });
 
 router.get('/call-for-submissions', function(req, res, next) {

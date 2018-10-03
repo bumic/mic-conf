@@ -1,0 +1,79 @@
+:root {
+	--main-purple: #545f99;
+}
+
+body {
+	font-family: 'Avenir', 'sans-serif';
+}
+
+a {
+	color: var(--main-purple);
+	text-decoration: underline;
+}
+
+header {
+	margin: 20px 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header div {
+	flex: 1;
+}
+
+header a img {
+	width: 65px;
+}
+
+#view-pdf {
+	position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+main {
+	margin: 0 auto;
+	margin-bottom: 40px;
+	max-width: 850px;
+}
+
+main h2 {
+	font-weight: 600;
+	font-size: 26px;
+}
+
+main p {
+	font-size: 16px;
+}
+
+section#schedule-by-room > div {
+	width: 100%;
+}
+
+.event {
+	margin: 15px 5px;
+	padding-top: 10px;
+	border-top: 1px solid #000;
+}
+
+.event .time {
+	font-weight: 600;
+}
+
+.event .description {
+	font-style: italic;
+}
+
+/*--------------------
+				Mobile
+--------------------*/
+
+
+@media screen and (max-width: 900px) {
+
+	main {
+		margin: 0 20px 20px 20px;
+	}
+
+}
