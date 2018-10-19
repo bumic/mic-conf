@@ -12,166 +12,31 @@ html(lang="en")
 			a(href="/")
 				img(src="images/mic-logo.png" alt="MIC Logo")
 			h1 Machine Intelligence Conference 2018 Schedule
-
-		section#schedule-by-room
-			#multipurpose
-				h2 Multi-Purpose Room
-				.content
-					.event
-						.time 8am to 9am 
-						.title Check in and Breakfast
-					.event
-						.time 9am to 9:10am 
-						.title Conference Kickoff
-						.description Rachel Manzelli, BUMIC
-					.event
-						.time 9:10am to 9:30am 
-						.title Opening Industry Keynote
-						.description Matt Scott, Malong
-					.event
-						.time 9:30am to 10am 
-						.title Opening Research Keynote:
-						.description Leslie Kaelbling, MIT
-					.event
-						.time 10am to 10:30am 
-						.title Student Research Talk
-					.event
-						.time 10:30am to 11am 
-						.title Student Research Talk
-					.event
-						.time 11am to 11:30am 
-						.title Student Research Talk
-					.event
-						.time 11:30am to Noon 
-						.title Student Research Talk
-					.event
-						.time Noon to 1pm 
-						.title Alumni Panel
-					.event
-						.time 1pm to 2pm
-						.title Industry Panel
-					.event
-						.time 2pm to 2:30pm
-						.title Student Research Talk
-					.event
-						.time 2:30pm to 3pm
-						.title Student Research Talk
-					.event
-						.time 3pm to 3:30pm
-						.title Student Research Talk
-					.event
-						.time 3:30pm to 4pm
-						.title Student Research Talk
-					.event
-						.time 4pm to 4:30pm
-						.title Student Research Talk
-					.event
-						.time 4:30pm to 5pm
-						.title Student Research Talk
-					.event
-						.time 5pm to 6pm
-						.title Closing Keynote
-						.description Kenneth Stanley, University of Central Florida &amp; Uber AI Labs
-			#lecture-hall
-				h2 Lecture Hall
-				.content
-					.event
-						.time 8am to 9am 
-						.title Check in and Breakfast
-					.event
-						.time 9am to 10am 
-						.title Keynote Livestream for Overflow
-					.event
-						.time 10am to 11am 
-						.title Beginner’s Workshop
-						.description Hosted by MIC
-					.event
-						.time 11am to Noon
-						.title Technical Speaker 2
-						.description Hosted by Intel
-					.event
-						.time Noon to 1pm 
-						.title Lunch
-					.event
-						.time 1pm to 2:30pm
-						.title Technical Speakers 3 and 4
-						.description Hosted by Nvidia
-					.event
-						.time 2:35pm to 2:25pm
-						.title Workshop 2
-						.description Hosted by Malong
-					.event
-						.time 3:30pm to 5pm
-						.title Technical Speakers 5 and 6
-						.description Hosted by Facebook
-					.event
-						.time 5pm to 6pm
-						.title Keynote Livestream for Overflow
-			#silverman
-				h2 Silverman Skyline Room
-				.content
-					.event
-						.time 8am to 9am 
-						.title Check in and Breakfast
-					.event
-						.time 9am to 10am 
-						.title Keynote Livestream for Overflow
-					.event
-						.time 10am to 11am 
-						.title Technical Speaker 1
-						.description Hosted by Malong
-					.event
-						.time 11am to Noon
-						.title Woman in MI Panel
-					.event
-						.time Noon to 1pm 
-						.title Woman in MI Lunch
-					.event
-						.time 1pm to 1:30pm
-						.title Student Research Talk
-					.event
-						.time 1:30pm to 2pm
-						.title Student Research Talk
-					.event
-						.time 2pm to 2:30pm
-						.title Student Research Talk
-					.event
-						.time 2:35pm to 3:25pm
-						.title Workshop 3
-						.description Hosted by Intel
-					.event
-						.time 3:30pm to 4pm
-						.title Student Research Talk
-					.event
-						.time 4pm to 4:30pm
-						.title Student Research Talk
-					.event
-						.time 4:30pm to 5pm
-						.title Student Research Talk
-					.event
-						.time 5pm to 6pm
-						.title Keynote Livestream for Overflow
-			#winter-garden
-				h2 Winter Garden Room
-				.content
-					.event
-						.time 8am to 10am 
-						.title Check in and Breakfast
-					.event
-						.time 10am to 11am
-						.title Free Space
-					.event
-						.time 11am to Noon
-						.title Coffee Break
-					.event
-						.time Noon to 1pm
-						.title Lunch
-					.event
-						.time 1pm to 2pm
-						.title Free Space
-					.event
-						.time 2pm to 4pm
-						.title Coffee Break
-					.event
-						.time 4pm to Closing
-						.title Free Space
+		section
+			.guide
+				.room-key
+					.mpr.room-icon
+					p Multi-purpose Room
+				.room-key
+					.ssr.room-icon
+					p Silverman Skyline Room
+				.room-key
+					.lh.room-icon
+					p Lecture Hall
+				.room-key
+					.wgr.room-icon
+					p Winter Garden Room
+			each event in scheduleJSON
+				div(class="event", class=event.type)
+					.desc
+						p.time=event.time
+						p.title=event.title
+						if event.speaker
+							if event.speaker_id
+								- var speakerlink = '/speakers/' + event.speaker_id.replace('_', '-');
+								a(href=speakerlink) #{event.speaker}
+							else
+								p=event.speaker
+					.rooms
+						each room in event.rooms
+							div(class=room)
