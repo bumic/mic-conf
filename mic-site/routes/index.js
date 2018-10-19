@@ -4,14 +4,21 @@ var router = express.Router();
 var GoogleSpreadsheet = require('google-spreadsheet');
 var async = require('async');
 var emailUtil = require('../utils/email.js');
+var scheduleUtil = require('../utils/schedule.js');
+var speakersUtil = require('../utils/speakers.js');
 var fs = require('fs');
 
 router.get('/', function(req, res, next) {
 	res.render('index');
 });
 
+router.get('/speakers/:id', function(req, res, next) {
+	var speakerId = req.params.id.replace('-', '_');
+	res.render('speakers', {speaker: speakersUtil.speakersJSON[speakerId]});
+});
+
 router.get('/schedule', function(req, res, next) {
-	res.render('schedule');
+	res.render('schedule', {scheduleJSON: scheduleUtil.scheduleJSON});
 });
 
 router.get('/schedule.pdf', function(req, res, next) {

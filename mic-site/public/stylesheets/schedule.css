@@ -16,6 +16,11 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 0;
+}
+
+header h1 {
+	margin-bottom: 0;
 }
 
 header div {
@@ -47,22 +52,75 @@ main p {
 	font-size: 16px;
 }
 
-section#schedule-by-room > div {
+/*section#schedule-by-room > div {
 	width: 100%;
-}
+}*/
 
 .event {
-	margin: 15px 5px;
-	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
 	border-top: 1px solid #000;
 }
 
-.event .time {
+.event .desc p {
+	margin: 0;
+}
+
+.event .desc .time {
 	font-weight: 600;
 }
 
-.event .description {
+.event .desc .speaker {
 	font-style: italic;
+}
+
+.event .rooms {
+	display: flex;
+	align-items: center;
+}
+
+.guide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.room-key {
+	display: flex;
+	align-items: center;
+}
+
+.room-key, .room-icon {
+	margin-right: 5px;
+}
+
+.room-key, p {
+	margin-left: 5px;
+}
+
+.mpr, .ssr, .lh, .wgr {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	margin-left: 5px;
+}
+
+.mpr {
+	background: #ffae76;
+}
+
+.ssr {
+	background: #ff688b;
+}
+
+.lh {
+	background: #ff94d0;
+}
+
+.wgr {
+	background: #d66fff;
 }
 
 /*--------------------

@@ -1,0 +1,38 @@
+:root {
+	--main-purple: #545f99;
+}
+
+body {
+	font-family: 'Avenir', 'sans-serif';
+}
+
+a {
+	color: var(--main-purple);
+	text-decoration: underline;
+}
+
+header {
+	margin: 20px 0 0 0;
+	display: flex;
+	align-items: center;
+}
+
+header a img {
+	width: 65px;
+	margin-right: 15px;
+}
+
+main {
+	margin: 0 auto;
+	margin-bottom: 40px;
+	max-width: 850px;
+}
+
+main h2 {
+	font-weight: 600;
+	font-size: 26px;
+}
+
+main p {
+	font-size: 16px;
+}
