@@ -53,7 +53,7 @@ module.exports = {
 			rooms: ["mpr"],
 			time: "10am - 10:30am",
 			title: "Student Research Talk",
-			speaker: "Andrew Rouditchenko",
+			speaker: "Andrew Rouditchenko, MIT",
 			speaker_id: "andrew_rouditchenko",
 			type: "student-talk",
 		}, 
@@ -62,7 +62,7 @@ module.exports = {
 			rooms: ["mpr"],
 			time: "10:30am - 11am",
 			title: "Student Research Talk",
-			speaker: "Sarah Bargal",
+			speaker: "Sarah Bargal, Boston University",
 			speaker_id: "sarah_bargal",
 			type: "student-talk",
 		}, 
@@ -95,7 +95,7 @@ module.exports = {
 			time: "11am - 11:30am",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Vitali Petsiuk",
+			speaker: "Vitali Petsiuk, Boston University",
 			speaker_id: "vitali_petsiuk",
 		}, 
 
@@ -104,7 +104,7 @@ module.exports = {
 			time: "11:30am - noon",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Guy Aridor",
+			speaker: "Guy Aridor, Columbia University",
 			speaker_id: "guy_aridor",
 		}, 
 
@@ -119,7 +119,7 @@ module.exports = {
 		{
 			rooms: ["ssr"],
 			time: "11am - noon",
-			title: "Woman in MI Panel",
+			title: "Women in MI Panel",
 			type: "panel",
 		}, 
 
@@ -147,7 +147,7 @@ module.exports = {
 		{
 			rooms: ["ssr"],
 			time: "noon - 1pm",
-			title: "Woman in MI Lunch",
+			title: "Women in MI Lunch",
 			type: "lunch",
 		}, 
 
@@ -156,7 +156,7 @@ module.exports = {
 			time: "1pm - 1:30pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Thalia Rossitter",
+			speaker: "Thalia Rossitter, Simmons University",
 			speaker_id: "thalia_rossitter",
 		}, 
 
@@ -195,7 +195,7 @@ module.exports = {
 			time: "2pm - 2:30pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Mary Dong",
+			speaker: "Mary Dong, Brown University",
 			speaker_id: "mary_dong",
 		}, 
 
@@ -204,7 +204,7 @@ module.exports = {
 			time: "2pm - 2:30pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Mona Jalal",
+			speaker: "Mona Jalal, Boston University",
 			speaker_id: "mona_jalal",
 		}, 
 
@@ -213,7 +213,7 @@ module.exports = {
 			time: "2:30pm - 3:00pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Giulia Pintea",
+			speaker: "Giulia Pintea, Simmons University",
 			speaker_id: "giulia_pintea",
 		}, 
 
@@ -238,7 +238,7 @@ module.exports = {
 			time: "3pm - 3:30pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Jessica Edwards",
+			speaker: "Jessica Edwards, Harvard College",
 			speaker_id: "jessica_edwards",
 		}, 
 
@@ -247,7 +247,7 @@ module.exports = {
 			time: "3:30pm - 4:00pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Jessica Yu",
+			speaker: "Jessica Yu, MIT",
 			speaker_id: "jessica_yu",
 		},  
 
@@ -256,7 +256,7 @@ module.exports = {
 			time: "3:30pm - 4:00pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Ari Brown",
+			speaker: "Ari Brown, Tufts University",
 			speaker_id: "ari_brown",
 		}, 
 
@@ -280,7 +280,7 @@ module.exports = {
 			time: "4pm - 4:30pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Aidan Gomez",
+			speaker: "Aidan Gomez, University of Oxford",
 			speaker_id: "aidan_gomez"
 		}, 
 
@@ -289,7 +289,7 @@ module.exports = {
 			time: "4:30pm - 5:00pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Olivia Koshy",
+			speaker: "Olivia Koshy, UC Berkeley",
 			speaker_id: "olivia_koshy"
 		},
 
@@ -298,7 +298,7 @@ module.exports = {
 			time: "4pm - 4:30pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Sheldon Huang",
+			speaker: "Sheldon Huang, University of Toronto",
 			speaker_id: "sicong_sheldon_huang"
 		}, 
 

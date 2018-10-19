@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/speakers/:id', function(req, res, next) {
-	var speakerId = req.params.id.replace('-', '_');
+	var speakerId = req.params.id.replace(/-/g, '_');
 	res.render('speakers', {speaker: speakersUtil.speakersJSON[speakerId]});
 });
 
