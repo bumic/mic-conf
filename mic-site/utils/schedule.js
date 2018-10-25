@@ -16,33 +16,6 @@ module.exports = {
 		},
 
 		{
-			rooms: ["ssr"],
-			time: "9am - 9:10am",
-			title: "Conference Kickoff",
-			speaker: "Rachel Manzelli, BUMIC",
-			speaker_id: "rachel_manzelli",
-			type: "keynote",
-		},
-
-		{
-			rooms: ["ssr"],
-			time: "9:10am - 9:30am",
-			title: "Opening Industry Keynote",
-			speaker: "Matt Scott, Malong",
-			speaker_id: "matt_scott",
-			type: "keynote",
-		},
-
-		{
-			rooms: ["ssr"],
-			time: "9:30am - 10am",
-			title: "Opening Research Keynote",
-			speaker: "Leslie Kaelbling, MIT",
-			speaker_id: "leslie_kaelbling",
-			type: "keynote",
-		},
-
-		{
 			rooms: ["lh", "ssr"],
 			time: "9am - 10am",
 			title: "Keynote Livestream for Overflow",
@@ -51,11 +24,60 @@ module.exports = {
 
 		{
 			rooms: ["mpr"],
+			time: "9am - 9:10am",
+			title: "Conference Kickoff",
+			speaker: "Rachel Manzelli, Boston University MIC",
+			type: "keynote",
+		},
+
+		{
+			rooms: ["mpr"],
+			time: "9:10am - 9:30am",
+			title: "Opening Industry Keynote",
+			speaker: "Matt Scott, Malong",
+			speaker_id: "matt_scott",
+			type: "keynote",
+		},
+
+		{
+			rooms: ["mpr"],
+			time: "9:30am - 10am",
+			title: "Opening Research Keynote",
+			speaker: "Leslie Kaelbling, MIT",
+			speaker_id: "leslie_kaelbling",
+			type: "keynote",
+		},
+
+		{
+			rooms: ["mpr"],
 			time: "10am - 10:30am",
 			title: "Student Research Talk",
 			speaker: "Andrew Rouditchenko, MIT",
 			speaker_id: "andrew_rouditchenko",
 			type: "student-talk",
+		},   
+
+		{
+			rooms: ["lh"],
+			time: "10am - 11am",
+			title: "Technical Speaker and Workshop",
+			speaker: "Hosted by Facebook",
+			type: "ws",
+		},
+
+		{
+			rooms: ["ssr"],
+			time: "10am - 10:30am",
+			title: "Student Research Talk",
+			type: "student-talk",
+			speaker: "Mary Dong and Amy Wang, Brown University",
+		},  
+
+		{
+			rooms: ["wgr"],
+			time: "10am - 11am",
+			title: "Free Space",
+			type: "misc"
 		}, 
 
 		{
@@ -68,26 +90,12 @@ module.exports = {
 		}, 
 
 		{
-			rooms: ["lh"],
-			time: "10am - 11am",
-			title: "Beginner’s Workshop",
-			speaker: "Hosted by MIC",
-			type: "ws",
-		},  
-
-		{
 			rooms: ["ssr"],
-			time: "10am - 11am",
-			title: "Technical Speaker 1",
-			speaker: "Hosted by Malong",
-			type: "sponsor-talk"
-		}, 
-
-		{
-			rooms: ["wgr"],
-			time: "10am - 11am",
-			title: "Free Space",
-			type: "misc"
+			time: "10:30am - 11am",
+			title: "Student Research Talk",
+			type: "student-talk",
+			speaker: "Giulia Pintea, Simmons University",
+			speaker_id: "giulia_pintea",
 		}, 
 
 		{
@@ -97,23 +105,6 @@ module.exports = {
 			type: "student-talk",
 			speaker: "Vitali Petsiuk, Boston University",
 			speaker_id: "vitali_petsiuk",
-		}, 
-
-		{
-			rooms: ["mpr"],
-			time: "11:30am - noon",
-			title: "Student Research Talk",
-			type: "student-talk",
-			speaker: "Guy Aridor, Columbia University",
-			speaker_id: "guy_aridor",
-		}, 
-
-		{
-			rooms: ["lh"],
-			time: "11am - noon",
-			title: "Technical Speaker 2",
-			speaker: "Hosted by Intel",
-			type: "sponsor-talk",
 		}, 
 
 		{
@@ -132,13 +123,30 @@ module.exports = {
 
 		{
 			rooms: ["mpr"],
+			time: "11:30am - noon",
+			title: "Student Research Talk",
+			type: "student-talk",
+			speaker: "Guy Aridor, Columbia University",
+			speaker_id: "guy_aridor",
+		}, 
+
+		{
+			rooms: ["lh"],
+			time: "11:30am - 1:00pm",
+			title: "Technical Speaker",
+			speaker: "NIVIDIA speakers: Adam Lesnikowski and Varun Jampani",
+			type: "sponsor-talk",
+		},
+
+		{
+			rooms: ["mpr"],
 			time: "noon - 1pm",
 			title: "Alumni Panel",
 			type: "panel",
 		}, 
 
 		{
-			rooms: ["lh", "wgr"],
+			rooms: ["wgr"],
 			time: "noon - 1pm",
 			title: "Lunch",
 			type: "lunch",
@@ -152,19 +160,30 @@ module.exports = {
 		}, 
 
 		{
+			rooms: ["mpr"],
+			time: "1pm - 1:30pm",
+			title: "Student Research Talk",
+			type: "student-talk",
+			speaker: "Olivia Koshy, UC Berkeley",
+			speaker_id: "olivia_koshy"
+		}, 
+
+		{
+			rooms: ["lh"],
+			time: "1pm - 2:30pm",
+			title: "Technical Talk and Workshop",
+			speaker: "Hosted by Malong",
+			type: "sponsor-talk",
+		}, 
+
+
+		{
 			rooms: ["ssr"],
 			time: "1pm - 1:30pm",
 			title: "Student Research Talk",
 			type: "student-talk",
 			speaker: "Thalia Rossitter, Simmons University",
 			speaker_id: "thalia_rossitter",
-		}, 
-
-		{
-			rooms: ["mpr"],
-			time: "1pm - 2pm",
-			title: "Industry Panel",
-			type: "panel",
 		}, 
 
 		{
@@ -180,27 +199,28 @@ module.exports = {
 			title: "Technical Speakers 3 and 4",
 			speaker: "Hosted by Nvidia",
 			type: "sponsor-talk",
-
 		}, 
 		
+		{
+			rooms: ["mpr"],
+			time: "1:30pm - 2pm",
+			title: "Student Research Talk",
+			speaker: "Yada Pruksachatkun",
+			speaker_id: "yada-pruksachatkun",
+			type: "student-talk",
+		},
+
 		{
 			rooms: ["ssr"],
 			time: "1:30pm - 2pm",
 			title: "Student Research Talk",
+			speaker: "David Tao",
+			speaker_id: "david-tao",
 			type: "student-talk",
-		}, 
+		},  
 
 		{
 			rooms: ["mpr"],
-			time: "2pm - 2:30pm",
-			title: "Student Research Talk",
-			type: "student-talk",
-			speaker: "Mary Dong, Brown University",
-			speaker_id: "mary_dong",
-		}, 
-
-		{
-			rooms: ["ssr"],
 			time: "2pm - 2:30pm",
 			title: "Student Research Talk",
 			type: "student-talk",
@@ -209,63 +229,12 @@ module.exports = {
 		}, 
 
 		{
-			rooms: ["mpr"],
-			time: "2:30pm - 3:00pm",
-			title: "Student Research Talk",
-			type: "student-talk",
-			speaker: "Giulia Pintea, Simmons University",
-			speaker_id: "giulia_pintea",
-		}, 
-
-		{
-			rooms: ["lh"],
-			time: "2:35pm - 3:25pm",
-			title: "Workshop 2",
-			speaker: "Hosted by Malong",
-			type: "ws",
-		}, 
-
-		{
 			rooms: ["ssr"],
-			time: "2:35pm - 3:25pm",
-			title: "Workshop 3",
-			speaker: "Hosted by Intel",
-			type: "ws",
-		},  
-
-		{
-			rooms: ["mpr"],
-			time: "3pm - 3:30pm",
+			time: "2pm - 2:30pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Jessica Edwards, Harvard College",
-			speaker_id: "jessica_edwards",
-		}, 
-
-		{
-			rooms: ["mpr"],
-			time: "3:30pm - 4:00pm",
-			title: "Student Research Talk",
-			type: "student-talk",
-			speaker: "Jessica Yu, MIT",
-			speaker_id: "jessica_yu",
-		},  
-
-		{
-			rooms: ["ssr"],
-			time: "3:30pm - 4:00pm",
-			title: "Student Research Talk",
-			type: "student-talk",
-			speaker: "Ari Brown, Tufts University",
-			speaker_id: "ari_brown",
-		}, 
-
-		{
-			rooms: ["lh"],
-			time: "3:30pm - 4:00pm",
-			title: "Student Research Talk",
-			type: "student-talk",
-			speaker: "TBD"
+			speaker: "Sheldon Huang, University of Toronto",
+			speaker_id: "sicong_sheldon_huang"
 		},  
 
 		{
@@ -277,45 +246,52 @@ module.exports = {
 
 		{
 			rooms: ["mpr"],
-			time: "4pm - 4:30pm",
+			time: "2:30pm - 3pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Aidan Gomez, University of Oxford",
-			speaker_id: "aidan_gomez"
+			speaker: "Jessica Edwards, Harvard College",
+			speaker_id: "jessica_edwards",
+		}, 
+
+		{
+			rooms: ["lh"],
+			time: "2:30pm - 4pm",
+			title: "Technical Talk and Workshop",
+			speaker: "Hosted by Nvidia",
+			type: "sponsor-talk",
+		}, 
+
+		{
+			rooms: ["ssr"],
+			time: "2:30pm - 3pm",
+			title: "Student Research Talk",
+			type: "student-talk",
+			speaker: "Ari Brown, Tufts University",
+			speaker_id: "ari_brown",
 		}, 
 
 		{
 			rooms: ["mpr"],
-			time: "4:30pm - 5:00pm",
+			time: "3pm - 3:30pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Olivia Koshy, UC Berkeley",
-			speaker_id: "olivia_koshy"
-		},
+			speaker: "Jessy Lin, MIT",
+		},  
 
 		{
 			rooms: ["ssr"],
-			time: "4pm - 4:30pm",
-			title: "Student Research Talk",
-			type: "student-talk",
-			speaker: "Sheldon Huang, University of Toronto",
-			speaker_id: "sicong_sheldon_huang"
+			time: "3pm - 4pm",
+			title: "Industry Panel",
+			type: "panel",
 		}, 
 
 		{
-			rooms: ["ssr"],
-			time: "4:30pm - 5:00pm",
+			rooms: ["mpr"],
+			time: "3:30pm - 4pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "TBD",
-		},
-
-		{
-			rooms: ["lh"],
-			time: "4pm - 5pm",
-			title: "Technical Speaker 6",
-			speaker: "Hosted by Facebook",
-			type: "sponsor-talk",
+			speaker: "Aidan Gomez, University of Oxford",
+			speaker_id: "aidan_gomez"
 		}, 
 
 		{
@@ -327,7 +303,7 @@ module.exports = {
 
 		{
 			rooms: ["mpr"],
-			time: "5pm - 6pm",
+			time: "4pm - 5pm",
 			title: "Closing Keynote",
 			speaker: "Kenneth Stanley, University of Central Florida & Uber AI Labs",
 			speaker_id: "kenneth_stanley",
@@ -336,10 +312,18 @@ module.exports = {
 
 		{
 			rooms: ["lh", "ssr"],
-			time: "5pm - 6pm",
+			time: "4pm - 5:10pm",
 			title: "Keynote Livestream for Overflow",
 			type: "keynote",
 		}, 
+
+		{
+			rooms: ["mpr"],
+			time: "5pm - 5:10pm",
+			title: "Closing Remarks",
+			speaker: "Dan Pechi, Tufts University MIC",
+			type: "keynote",
+		},
 
 	]
 };

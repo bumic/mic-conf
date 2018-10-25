@@ -37,6 +37,12 @@ header a img {
   right: 20px;
 }
 
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%
+}
+
 main {
 	margin: 0 auto;
 	margin-bottom: 40px;

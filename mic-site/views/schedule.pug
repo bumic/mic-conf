@@ -6,37 +6,39 @@ html(lang="en")
 		link(rel="stylesheet" href="stylesheets/mobile.css")
 		link(rel="stylesheet" href="stylesheets/schedule.css")
 	
-	main
-		header
-			a#view-pdf(href="/schedule.pdf") View a pdf version
-			a(href="/")
-				img(src="images/mic-logo.png" alt="MIC Logo")
-			h1 Machine Intelligence Conference 2018 Schedule
-		section
-			.guide
-				.room-key
-					.mpr.room-icon
-					p Multi-purpose Room
-				.room-key
-					.ssr.room-icon
-					p Silverman Skyline Room
-				.room-key
-					.lh.room-icon
-					p Lecture Hall
-				.room-key
-					.wgr.room-icon
-					p Winter Garden Room
-			each event in scheduleJSON
-				div(class="event", class=event.type)
-					.desc
-						p.time=event.time
-						p.title=event.title
-						if event.speaker
-							if event.speaker_id
-								- var speakerlink = '/speakers/' + event.speaker_id.replace(/_/g, '-');
-								a(href=speakerlink) #{event.speaker}
-							else
-								p=event.speaker
-					.rooms
-						each room in event.rooms
-							div(class=room)
+	body
+		main
+			header
+				a#view-pdf(href="/schedule.pdf") View a pdf version
+				a(href="/")
+					img(src="images/mic-logo.png" alt="MIC Logo")
+				h1 Machine Intelligence Conference 2018 Schedule
+			section
+				#guide-wrapper
+					.guide
+						.room-key
+							.mpr.room-icon
+							p Multi-purpose Room
+						.room-key
+							.ssr.room-icon
+							p Silverman Skyline Room
+						.room-key
+							.lh.room-icon
+							p Lecture Hall
+						.room-key
+							.wgr.room-icon
+							p Winter Garden Room
+				each event in scheduleJSON
+					div(class="event", class=event.type)
+						.desc
+							p.time=event.time
+							p.title=event.title
+							if event.speaker
+								if event.speaker_id
+									- var speakerlink = '/speakers/' + event.speaker_id.replace(/_/g, '-');
+									a(href=speakerlink) #{event.speaker}
+								else
+									p=event.speaker
+						.rooms
+							each room in event.rooms
+								div(class=room)
