@@ -215,7 +215,7 @@ module.exports = {
 			time: "1:30pm - 2pm",
 			title: "Student Research Talk",
 			speaker: "David Tao",
-			speaker_id: "david-tao",
+			speaker_id: "ruo-yu-david-tao",
 			type: "student-talk",
 		},  
 
