@@ -102,6 +102,13 @@ module.exports = {
 			abstract: 'This talk will focus on computer vision techniques used to explore core aspects in the optical character recognition (OCR) pipeline, specifically focusing on text localization. I will explain how the team I worked with helped make the Efficient and Accurate Scene Text detector (EAST) more accurate by running models on more data, focusing on how synthetic data, real data augmentation, and generative adversarial networks (GANs) helped in this process. I will also talk about my experience doing research this summer in the Summer Camp for Applied Language Exploration (SCALE) program as well as attending workshops through JHU’s Center for Language and Speech Processing (CLSP).',
 		},
 
+		yada_pruksachatkun: {
+			name: "Yada Pruksachatkun",
+			bio: "Yada Pruksachatkun is a first year Masters student at the NYU Center for Data Science specializing in Natural Language Processing. Previously, she has done research at MIT CSAIL lab on dialogue modelling using convolutional neural networks, software engineering at Facebook, and in a different life, ran a nonprofit in the healthcare sector in Thailand. She graduated with a BA in Mathematics and Computer Science from Wellesley College, and is committed to creating ways for Natural Language Processing to make getting help for mental healthcare more accessible and efficient.",
+			title: "Moment of change: Predicting Cognitive Restructuring in Online Mental Health Forums",
+			abstract: "While it is clear that working to deconstruct and reframe irrational thoughts can help bring positive perspective shifts to those suffering from mental distress, the specific factors that precipitate a moment of cognitive change are unclear, particularly in peer-to-peer support. Through data from an online mental health forum, we study patterns of peer support to shed light on how moments of cognitive change happen in online communities. Consistent with psychological literature, we use markers of language associated with moments of change, and explore how temporal changes in sentiment surrounding specific topics can approximate cognitive restructuring processes. In addition, we find that culture mediates the effect of these features. Based on the above findings, we propose a predictive model that can distinguish which conversation thread or a post is associated with a moment of cognitive change, and discuss the implications of our work for forum design and online peer support",
+		},
+
 		jessica_yu: {
 			name: 'Jessica Yu',
 			bio: 'Jessica is an MIT senior studying computer science, with a focus in product-driven machine learning and backend development. Her interests outside work include history, vocals, and analyzing film.',
