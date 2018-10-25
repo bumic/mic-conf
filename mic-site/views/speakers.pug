@@ -13,11 +13,11 @@ html(lang="en")
 			h1=speaker.name
 		section
 			h3 Bio:
-			p.bio=speaker.bio
+			p.bio!=speaker.bio
 			if speaker.title
 				.speakers-talk
 					h3 Title:
-					p.title=speaker.title
+					p.title!=speaker.title
 					if speaker.abstract
 						h3 Abstract:
-						p.abstract=speaker.abstract
+						p.abstract!=speaker.abstract
