@@ -51,7 +51,7 @@ module.exports = {
 		{
 			rooms: ["mpr"],
 			time: "10am - 10:30am",
-			title: "Student Research Talk",
+			title: "The Sound of Pixels",
 			speaker: "Andrew Rouditchenko, MIT",
 			speaker_id: "andrew_rouditchenko",
 			type: "student-talk",
@@ -59,16 +59,16 @@ module.exports = {
 
 		{
 			rooms: ["lh"],
-			time: "10am - 11am",
-			title: "Technical Speaker and Workshop",
-			speaker: "Hosted by Facebook",
-			type: "ws",
+			time: "10am - 11:30am",
+			title: "Machine Learning for Satellite Image Analysis",
+			speaker: "Danil Kirsanov, Facebook",
+			type: "sponsor-talk",
 		},
 
 		{
 			rooms: ["ssr"],
 			time: "10am - 10:30am",
-			title: "Student Research Talk",
+			title: "Deep Learning for ELVO Stroke Detection",
 			type: "student-talk",
 			speaker: "Mary Dong and Amy Wang, Brown University",
 		},  
@@ -83,7 +83,7 @@ module.exports = {
 		{
 			rooms: ["mpr"],
 			time: "10:30am - 11am",
-			title: "Student Research Talk",
+			title: "Spatio-temporal Grounding in Visual Data",
 			speaker: "Sarah Bargal, Boston University",
 			speaker_id: "sarah_bargal",
 			type: "student-talk",
@@ -92,7 +92,7 @@ module.exports = {
 		{
 			rooms: ["ssr"],
 			time: "10:30am - 11am",
-			title: "Student Research Talk",
+			title: "Using Quality-of-Life Scores to Guide Prostate Radiation Therapy Dosing",
 			type: "student-talk",
 			speaker: "Giulia Pintea, Simmons University",
 			speaker_id: "giulia_pintea",
@@ -101,7 +101,7 @@ module.exports = {
 		{
 			rooms: ["mpr"],
 			time: "11am - 11:30am",
-			title: "Student Research Talk",
+			title: "RISE: Randomized Input Sampling for Explanation of Black-box Models",
 			type: "student-talk",
 			speaker: "Vitali Petsiuk, Boston University",
 			speaker_id: "vitali_petsiuk",
@@ -124,7 +124,7 @@ module.exports = {
 		{
 			rooms: ["mpr"],
 			time: "11:30am - noon",
-			title: "Student Research Talk",
+			title: "What can artificial intelligence teach economics?",
 			type: "student-talk",
 			speaker: "Guy Aridor, Columbia University",
 			speaker_id: "guy_aridor",
@@ -162,7 +162,7 @@ module.exports = {
 		{
 			rooms: ["mpr"],
 			time: "1pm - 1:30pm",
-			title: "Student Research Talk",
+			title: "Your Children and AI",
 			type: "student-talk",
 			speaker: "Olivia Koshy, UC Berkeley",
 			speaker_id: "olivia_koshy"
@@ -172,7 +172,8 @@ module.exports = {
 			rooms: ["lh"],
 			time: "1pm - 2:30pm",
 			title: "Technical Talk and Workshop",
-			speaker: "Hosted by Malong",
+			speaker: "Matt Schott, Malong",
+			speaker_id: "matt_scott",
 			type: "sponsor-talk",
 		}, 
 
@@ -180,7 +181,7 @@ module.exports = {
 		{
 			rooms: ["ssr"],
 			time: "1pm - 1:30pm",
-			title: "Student Research Talk",
+			title: "Performance Boosting Methods in Semi-Supervised NLP Neural Net Environments",
 			type: "student-talk",
 			speaker: "Thalia Rossitter, Simmons University",
 			speaker_id: "thalia_rossitter",
@@ -200,42 +201,41 @@ module.exports = {
 			speaker: "Hosted by Nvidia",
 			type: "sponsor-talk",
 		}, 
-		
-		{
-			rooms: ["mpr"],
-			time: "1:30pm - 2pm",
-			title: "Student Research Talk",
-			speaker: "Yada Pruksachatkun",
-			speaker_id: "yada-pruksachatkun",
-			type: "student-talk",
-		},
-
-		{
-			rooms: ["ssr"],
-			time: "1:30pm - 2pm",
-			title: "Student Research Talk",
-			speaker: "David Tao",
-			speaker_id: "ruo-yu-david-tao",
-			type: "student-talk",
-		},  
 
 		{
 			rooms: ["mpr"],
-			time: "2pm - 2:30pm",
-			title: "Student Research Talk",
+			time: "1:30pm - 2pm",
+			title: "TimbreTron: A WaveNet(CycleGAN(CQT(Audio))) Pipeline for Musical Timbre Transfer",
 			type: "student-talk",
-			speaker: "Mona Jalal, Boston University",
-			speaker_id: "mona_jalal",
+			speaker: "Sheldon Huang, University of Toronto",
+			speaker_id: "sicong_sheldon_huang"
 		}, 
 
 		{
 			rooms: ["ssr"],
-			time: "2pm - 2:30pm",
+			time: "1:30pm - 2pm",
 			title: "Student Research Talk",
 			type: "student-talk",
-			speaker: "Sheldon Huang, University of Toronto",
-			speaker_id: "sicong_sheldon_huang"
-		},  
+			speaker: "Jessy Lin, MIT",
+		}, 
+
+		{
+			rooms: ["mpr"],
+			time: "2pm - 2:30pm",
+			title: "Creating Synthetic Data for Deep Learning Applications",
+			type: "student-talk",
+			speaker: "Mona Jalal, Boston University",
+			speaker_id: "mona_jalal",
+		},
+		
+		{
+			rooms: ["ssr"],
+			time: "2pm - 2:30pm",
+			title: "Moment of change: Predicting Cognitive Restructuring in Online Mental Health Forums",
+			speaker: "Yada Pruksachatkun",
+			speaker_id: "yada_pruksachatkun",
+			type: "student-talk",
+		},   
 
 		{
 			rooms: ["wgr"],
@@ -247,7 +247,7 @@ module.exports = {
 		{
 			rooms: ["mpr"],
 			time: "2:30pm - 3pm",
-			title: "Student Research Talk",
+			title: "Multilingual Text Search in Image Collection",
 			type: "student-talk",
 			speaker: "Jessica Edwards, Harvard College",
 			speaker_id: "jessica_edwards",
@@ -257,25 +257,17 @@ module.exports = {
 			rooms: ["lh"],
 			time: "2:30pm - 4pm",
 			title: "Technical Talk and Workshop",
-			speaker: "Hosted by Nvidia",
+			speaker: "Ellick Chan & Jude Shavlik, Intel",
 			type: "sponsor-talk",
 		}, 
 
 		{
 			rooms: ["ssr"],
 			time: "2:30pm - 3pm",
-			title: "Student Research Talk",
+			title: "The Semantic-Hypnotic Model of Music Perception",
 			type: "student-talk",
 			speaker: "Ari Brown, Tufts University",
 			speaker_id: "ari_brown",
-		}, 
-
-		{
-			rooms: ["mpr"],
-			time: "3pm - 3:30pm",
-			title: "Student Research Talk",
-			type: "student-talk",
-			speaker: "Jessy Lin, MIT",
 		},  
 
 		{
@@ -287,8 +279,17 @@ module.exports = {
 
 		{
 			rooms: ["mpr"],
+			time: "3pm - 3:30pm",
+			title: "Learning with text-based games",
+			speaker: "David Tao",
+			speaker_id: "ruo_yu_david_tao",
+			type: "student-talk",
+		}, 
+
+		{
+			rooms: ["mpr"],
 			time: "3:30pm - 4pm",
-			title: "Student Research Talk",
+			title: "Targeted Dropout and Bitrot: Simple and Effective Techniques for Sparsification and Quantization",
 			type: "student-talk",
 			speaker: "Aidan Gomez, University of Oxford",
 			speaker_id: "aidan_gomez"
