@@ -8,9 +8,14 @@ html(lang="en")
 	
 	main
 		header
-			a(href="/")
-				img(src="../images/mic-logo.png" alt="MIC Logo")
-			h1=speaker.name
+			.left
+				a(href="/")
+					img(src="../images/mic-logo.png" alt="MIC Logo")
+				h1=speaker.name
+			.right
+				if speaker.headshot
+					- var headshotLink = '../images/speakers/' + speaker.headshot
+					img(src=headshotLink alt="speaker headshot")
 		section
 			h3 Bio:
 			p.bio!=speaker.bio

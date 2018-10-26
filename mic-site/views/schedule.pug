@@ -42,3 +42,16 @@ html(lang="en")
 						.rooms
 							each room in event.rooms
 								div(class=room)
+
+		script.
+			// When the user scrolls the page, execute myFunction 
+			var wrapper = document.getElementById("guide-wrapper");
+			var sticky = wrapper.offsetTop;
+
+			window.onscroll = () => {
+				if (window.pageYOffset > sticky) {
+			    wrapper.classList.add("sticky");
+			  } else {
+			    wrapper.classList.remove("sticky");
+			  }
+			}
