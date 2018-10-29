@@ -172,7 +172,7 @@ module.exports = {
 			rooms: ["lh"],
 			time: "1pm - 2:30pm",
 			title: "Technical Talk and Workshop",
-			speaker: "Matt Schott, Malong",
+			speaker: "Matt Scott, Malong",
 			speaker_id: "matt_scott",
 			type: "sponsor-talk",
 		}, 
