@@ -26,7 +26,7 @@ module.exports = {
 			rooms: ["mpr"],
 			time: "9am - 9:10am",
 			title: "Conference Kickoff",
-			speaker: "Rachel Manzelli, Boston University MIC",
+			speaker: "Justin Chen, Boston University MIC",
 			type: "keynote",
 		},
 
@@ -51,11 +51,10 @@ module.exports = {
 		{
 			rooms: ["mpr"],
 			time: "10am - 10:30am",
-			title: "The Sound of Pixels",
-			speaker: "Andrew Rouditchenko, MIT",
-			speaker_id: "andrew_rouditchenko",
+			title: "Real-World Adversarial Examples",
 			type: "student-talk",
-		},   
+			speaker: "Jessy Lin, MIT",
+		},  
 
 		{
 			rooms: ["lh"],
@@ -99,6 +98,13 @@ module.exports = {
 		}, 
 
 		{
+			rooms: ["wgr"],
+			time: "11am - noon",
+			title: "Coffee Break",
+			type: "misc",
+		},  
+
+		{
 			rooms: ["mpr"],
 			time: "11am - 11:30am",
 			title: "RISE: Randomized Input Sampling for Explanation of Black-box Models",
@@ -115,41 +121,34 @@ module.exports = {
 		}, 
 
 		{
-			rooms: ["wgr"],
-			time: "11am - noon",
-			title: "Coffee Break",
-			type: "misc",
-		}, 
-
-		{
 			rooms: ["mpr"],
 			time: "11:30am - noon",
-			title: "What can artificial intelligence teach economics?",
+			title: "The Sound of Pixels",
+			speaker: "Andrew Rouditchenko, MIT",
+			speaker_id: "andrew_rouditchenko",
 			type: "student-talk",
-			speaker: "Guy Aridor, Columbia University",
-			speaker_id: "guy_aridor",
-		}, 
+		},  
 
 		{
 			rooms: ["lh"],
 			time: "11:30am - 1:00pm",
 			title: "Technical Speaker",
-			speaker: "NIVIDIA speakers: Adam Lesnikowski and Varun Jampani",
+			speaker: "Nvidia speakers: Adam Lesnikowski and Varun Jampani",
 			type: "sponsor-talk",
 		},
-
-		{
-			rooms: ["mpr"],
-			time: "noon - 1pm",
-			title: "Alumni Panel",
-			type: "panel",
-		}, 
 
 		{
 			rooms: ["wgr"],
 			time: "noon - 1pm",
 			title: "Lunch",
 			type: "lunch",
+		}, 
+
+		{
+			rooms: ["mpr"],
+			time: "noon - 1pm",
+			title: "Alumni Panel",
+			type: "panel",
 		},  
 
 		{
@@ -157,6 +156,13 @@ module.exports = {
 			time: "noon - 1pm",
 			title: "Women in MI Lunch",
 			type: "lunch",
+		}, 
+
+		{
+			rooms: ["wgr"],
+			time: "1pm - 2pm",
+			title: "Free Space",
+			type: "misc",
 		}, 
 
 		{
@@ -171,7 +177,7 @@ module.exports = {
 		{
 			rooms: ["lh"],
 			time: "1pm - 2:30pm",
-			title: "Technical Talk and Workshop",
+			title: "CurriculumNet: Weakly Supervised Learning from Large-Scale Web Images",
 			speaker: "Matt Scott, Malong",
 			speaker_id: "matt_scott",
 			type: "sponsor-talk",
@@ -188,21 +194,6 @@ module.exports = {
 		}, 
 
 		{
-			rooms: ["wgr"],
-			time: "1pm - 2pm",
-			title: "Free Space",
-			type: "misc",
-		}, 
-
-		{
-			rooms: ["lh"],
-			time: "1pm - 2:30pm",
-			title: "Technical Speakers 3 and 4",
-			speaker: "Hosted by Nvidia",
-			type: "sponsor-talk",
-		}, 
-
-		{
 			rooms: ["mpr"],
 			time: "1:30pm - 2pm",
 			title: "TimbreTron: A WaveNet(CycleGAN(CQT(Audio))) Pipeline for Musical Timbre Transfer",
@@ -210,32 +201,33 @@ module.exports = {
 			speaker: "Sheldon Huang, University of Toronto",
 			speaker_id: "sicong_sheldon_huang"
 		}, 
-
-		{
-			rooms: ["ssr"],
-			time: "1:30pm - 2pm",
-			title: "Student Research Talk",
-			type: "student-talk",
-			speaker: "Jessy Lin, MIT",
-		}, 
-
-		{
-			rooms: ["mpr"],
-			time: "2pm - 2:30pm",
-			title: "Creating Synthetic Data for Deep Learning Applications",
-			type: "student-talk",
-			speaker: "Mona Jalal, Boston University",
-			speaker_id: "mona_jalal",
-		},
 		
 		{
 			rooms: ["ssr"],
-			time: "2pm - 2:30pm",
+			time: "1:30pm - 2pm",
 			title: "Moment of change: Predicting Cognitive Restructuring in Online Mental Health Forums",
 			speaker: "Yada Pruksachatkun, NYU",
 			speaker_id: "yada_pruksachatkun",
 			type: "student-talk",
-		},   
+		},  
+
+		{
+			rooms: ["mpr"],
+			time: "2pm - 2:30pm",
+			title: "The Semantic-Hypnotic Model of Music Perception",
+			type: "student-talk",
+			speaker: "Ari Brown, Tufts University",
+			speaker_id: "ari_brown",
+		},  
+
+		{
+			rooms: ["ssr"],
+			time: "2pm - 2:30pm",
+			title: "What can artificial intelligence teach economics?",
+			type: "student-talk",
+			speaker: "Guy Aridor, Columbia University",
+			speaker_id: "guy_aridor",
+		},
 
 		{
 			rooms: ["wgr"],
@@ -256,7 +248,7 @@ module.exports = {
 		{
 			rooms: ["lh"],
 			time: "2:30pm - 4pm",
-			title: "Technical Talk and Workshop",
+			title: "Tensorflow optimizations and performance tuning for Intel platforms",
 			speaker: "Ellick Chan & Jude Shavlik, Intel",
 			type: "sponsor-talk",
 		}, 
@@ -264,17 +256,10 @@ module.exports = {
 		{
 			rooms: ["ssr"],
 			time: "2:30pm - 3pm",
-			title: "The Semantic-Hypnotic Model of Music Perception",
+			title: "Creating Synthetic Data for Deep Learning Applications",
 			type: "student-talk",
-			speaker: "Ari Brown, Tufts University",
-			speaker_id: "ari_brown",
-		},  
-
-		{
-			rooms: ["ssr"],
-			time: "3pm - 4pm",
-			title: "Industry Panel",
-			type: "panel",
+			speaker: "Mona Jalal, Boston University",
+			speaker_id: "mona_jalal",
 		}, 
 
 		{
@@ -284,6 +269,13 @@ module.exports = {
 			speaker: "David Tao, McGill University",
 			speaker_id: "ruo_yu_david_tao",
 			type: "student-talk",
+		}, 
+
+		{
+			rooms: ["ssr"],
+			time: "3pm - 4pm",
+			title: "Industry Panel",
+			type: "panel",
 		}, 
 
 		{
