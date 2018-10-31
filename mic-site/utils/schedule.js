@@ -20,7 +20,7 @@ module.exports = {
 			rooms: ["mpr"],
 			time: "9am - 9:10am",
 			title: "Conference Kickoff",
-			speaker: "Justin Chen, Boston University MIC",
+			speaker: "Justin Chen, MIC",
 			type: "keynote",
 		},
 
@@ -55,6 +55,7 @@ module.exports = {
 			title: "Real-World Adversarial Examples",
 			type: "student-talk",
 			speaker: "Jessy Lin, MIT",
+			speaker_id: "jessy_lin",
 		},  
 
 		{
@@ -118,8 +119,9 @@ module.exports = {
 		{
 			rooms: ["lh"],
 			time: "11:30am - 1:00pm",
-			title: "Technical Speaker",
-			speaker: "Nvidia speakers: Adam Lesnikowski and Varun Jampani",
+			title: "Nvidia Talks: Data-Driven Dataset Creation: Deep Active Learning for Autonomous Vehicles and Beyond and Sparse High-Dimensional Neural Networks",
+			panelists: ["Adam Lesnikowski", "Varun Jampani"],
+			panelists_ids: ["adam_lesnikowski", "varun_jampani"],
 			type: "sponsor-talk",
 		},
 
@@ -237,7 +239,8 @@ module.exports = {
 			rooms: ["lh"],
 			time: "2:30pm - 4pm",
 			title: "Tensorflow optimizations and performance tuning for Intel platforms",
-			speaker: "Ellick Chan & Jude Shavlik, Intel",
+			panelists: ["Ellick Chan, Intel", "Jude Shavlik, Intel"],
+			panelists_ids: ["ellick_chan", ""],
 			type: "sponsor-talk",
 		}, 
 
@@ -264,7 +267,8 @@ module.exports = {
 			time: "3pm - 3:30pm",
 			title: "Deep Learning for ELVO Stroke Detection",
 			type: "student-talk",
-			speaker: "Mary Dong and Amy Wang, Brown University",
+			panelists: ["Mary Dong, Brown University", "Amy Wang, Brown University"],
+			panelists_ids: ["mary_dong", "amy_wang"]
 		},  
 
 		{
