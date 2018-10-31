@@ -33,12 +33,20 @@ html(lang="en")
 						.desc
 							p.time=event.time
 							p.title=event.title
+							
 							if event.speaker
 								if event.speaker_id
 									- var speakerlink = '/speakers/' + event.speaker_id.replace(/_/g, '-');
 									a(href=speakerlink) #{event.speaker}
 								else
 									p=event.speaker
+							
+							else if event.panelists
+								.flex
+									each panelist, i in event.panelists
+										- var panelistlink = '/speakers/' + event.panelists_ids[i].replace(/_/g, '-');
+										a(href=panelistlink) #{panelist}
+
 						.rooms
 							each room in event.rooms
 								div(class=room)

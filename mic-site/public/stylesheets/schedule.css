@@ -43,6 +43,11 @@ header a img {
 	width: 100%
 }
 
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 main {
 	margin: 0 auto;
 	margin-bottom: 40px;
@@ -71,6 +76,10 @@ main p {
 
 .event .desc p {
 	margin: 0;
+}
+
+.event .desc .flex a {
+	margin-right: 5px;
 }
 
 .event .desc .time {

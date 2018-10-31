@@ -265,5 +265,10 @@ module.exports = {
 			headshot: 'sims_gautam.jpeg',
 		},
 
+		jacqueline_xu: {
+			name: "Jacqueline Xu",
+			bio: "Jackie Xu is a recent graduate from MIT, with a Bachelors in Computer Science and a Masters of Engineering in Artificial Intelligence. She will be joining Facebook as a software engineer. Jackie has previously researched at the Computational Cognitive Science group with Prof. Josh Tenenbaum and at the Affective Computing group with Prof. Rosalind Picard. Her interests include how AI can be applied to social issues and bettering public understanding of AI technologies.",
+		}
+
 	}
 };
