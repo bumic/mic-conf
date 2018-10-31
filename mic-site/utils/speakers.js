@@ -268,7 +268,15 @@ module.exports = {
 		jacqueline_xu: {
 			name: "Jacqueline Xu",
 			bio: "Jackie Xu is a recent graduate from MIT, with a Bachelors in Computer Science and a Masters of Engineering in Artificial Intelligence. She will be joining Facebook as a software engineer. Jackie has previously researched at the Computational Cognitive Science group with Prof. Josh Tenenbaum and at the Affective Computing group with Prof. Rosalind Picard. Her interests include how AI can be applied to social issues and bettering public understanding of AI technologies.",
+		},
+
+		jessy_lin: {
+			name: "Jessy Lin",
+			bio: "Jessy is a senior studying EECS and philosophy at MIT. She works on real-world adversarial examples with Labsix, an independent student-run research group, speech learning in Josh Tenenbaum's Computational Cognitive Science Lab. She has also spent time at Google Research NYC, investigating memory for learning long-term dependencies. Outside of research, she organizes HackMIT, works on tech for refugee healthcare, and builds things.",
+			title: "Real-World Adversarial Examples",
+			abstract: "We share two research directions demonstrating how adversarial attacks can be realized in realistic attack settings and threat models. In our first work, Synthesizing Robust Adversarial Examples, we present the first algorithm for synthesizing examples that are adversarial over a chosen distribution of transformations (such as viewpoint shifts and camera noise) and demonstrate that 3D adversarial objects can be realized in the physical world. In our second work, Adversarial Attacks Under Restricted Threat Models, we use natural evolution strategies as a query-efficient algorithm for black-box adversarial examples, for cases where queries to the classifier would be highly costly (e.g. API fees or rate limits). We also develop two algorithms to generate adversarial examples in the partial-information (only top-k predictions given) and further, the label-only (only top-k labels given, without probabilities or scores) cases. Using these methods, we demonstrate the first targeted attack against the Google Cloud Vision API to show that these methods can be applied to real-world, commercial-scale systems.",
 		}
+
 
 	}
 };

@@ -44,9 +44,12 @@ html(lang="en")
 							else if event.panelists
 								.flex
 									each panelist, i in event.panelists
-										- var panelistlink = '/speakers/' + event.panelists_ids[i].replace(/_/g, '-');
-										a(href=panelistlink) #{panelist}
-
+										if event.panelists_ids[i] != ""
+											- var panelistlink = '/speakers/' + event.panelists_ids[i].replace(/_/g, '-');
+											a(href=panelistlink) #{panelist}
+										else
+											p=panelist
+	
 						.rooms
 							each room in event.rooms
 								div(class=room)
