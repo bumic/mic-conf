@@ -1,12 +1,6 @@
 module.exports = {
 	// Ordered by time
 	scheduleJSON: [
-		{
-			rooms: ["mpr", "ssr", "lh"],
-			time: "8am - 9am",
-			title: "Check in and Breakfast",
-			type: "misc",
-		},
 
 		{
 			rooms: ["wgr"],
@@ -16,7 +10,7 @@ module.exports = {
 		},
 
 		{
-			rooms: ["lh", "ssr"],
+			rooms: ["lh"],
 			time: "9am - 10am",
 			title: "Keynote Livestream for Overflow",
 			type: "keynote",
@@ -49,6 +43,13 @@ module.exports = {
 		},
 
 		{
+			rooms: ["wgr"],
+			time: "10am - 11am",
+			title: "Free Space",
+			type: "misc"
+		}, 
+
+		{
 			rooms: ["mpr"],
 			time: "10am - 10:30am",
 			title: "Real-World Adversarial Examples",
@@ -66,17 +67,11 @@ module.exports = {
 
 		{
 			rooms: ["ssr"],
-			time: "10am - 10:30am",
-			title: "Deep Learning for ELVO Stroke Detection",
-			type: "student-talk",
-			speaker: "Mary Dong and Amy Wang, Brown University",
-		},  
-
-		{
-			rooms: ["wgr"],
 			time: "10am - 11am",
-			title: "Free Space",
-			type: "misc"
+			title: "Industry Panel",
+			panelists: ["Matt Scott, Malong", "Ellick Chan, Intel", "Hassan Kane, Sela", "Simanta Gautam, Synapse"],
+			panelists_ids: ["matt_scott", "ellick_chan", "hassan_kane", "simanta_gautam"], 
+			type: "panel",
 		}, 
 
 		{
@@ -86,15 +81,6 @@ module.exports = {
 			speaker: "Sarah Bargal, Boston University",
 			speaker_id: "sarah_bargal",
 			type: "student-talk",
-		}, 
-
-		{
-			rooms: ["ssr"],
-			time: "10:30am - 11am",
-			title: "Using Quality-of-Life Scores to Guide Prostate Radiation Therapy Dosing",
-			type: "student-talk",
-			speaker: "Giulia Pintea, Simmons University",
-			speaker_id: "giulia_pintea",
 		}, 
 
 		{
@@ -139,7 +125,7 @@ module.exports = {
 
 		{
 			rooms: ["wgr"],
-			time: "noon - 1pm",
+			time: "noon - 1:30pm",
 			title: "Lunch",
 			type: "lunch",
 		}, 
@@ -148,6 +134,8 @@ module.exports = {
 			rooms: ["mpr"],
 			time: "noon - 1pm",
 			title: "Alumni Panel",
+			panelists: ["Ali-Amir Aldan", "Bristy Sikder", "Jacqueline Xu", "Jeremy Nixon", "Michael Chang", "Mohamed Hassan Kane", "Shraman Ray Chaudhuri", "Simanta Gautam", "Moderator: Justin Chen"],
+			panelists_ids: ["ali_amir_aldan", "bristy_sikder", "jacqueline_xu", "jeremy_nixon", "michael_chang", "hassan_kane", "shaman_ray_chaudhuri", "simanta_gautam", "justin_chen"],
 			type: "panel",
 		},  
 
@@ -273,10 +261,11 @@ module.exports = {
 
 		{
 			rooms: ["ssr"],
-			time: "3pm - 4pm",
-			title: "Industry Panel",
-			type: "panel",
-		}, 
+			time: "3pm - 3:30pm",
+			title: "Deep Learning for ELVO Stroke Detection",
+			type: "student-talk",
+			speaker: "Mary Dong and Amy Wang, Brown University",
+		},  
 
 		{
 			rooms: ["mpr"],
@@ -285,6 +274,15 @@ module.exports = {
 			type: "student-talk",
 			speaker: "Aidan Gomez, University of Oxford",
 			speaker_id: "aidan_gomez"
+		}, 
+
+		{
+			rooms: ["ssr"],
+			time: "3:30pm - 4pm",
+			title: "Using Quality-of-Life Scores to Guide Prostate Radiation Therapy Dosing",
+			type: "student-talk",
+			speaker: "Giulia Pintea, Simmons University",
+			speaker_id: "giulia_pintea",
 		}, 
 
 		{
