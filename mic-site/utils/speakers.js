@@ -20,11 +20,6 @@ module.exports = {
 			bio: 'Matt Scott is Co-Founder and CTO of Malong Technologies, an award-winning artificial intelligence startup based in China. The company produces leading computer vision technologies for the retail and medical industries. Matt has 15+ years R&D experience in computer vision and machine learning. </br> He is a Senior Member of the IEEE (SMIEEE), has published 70+ patents, and over a dozen research papers in top scientific conferences and journals, including cover featured articles in the Proceedings of the IEEE and IEEE Computer. At CVPR 2017, Matt and his team won first place in the WebVision Challenge, a worldwide computer vision contest from Google. </br> In 2014, Matt co-founded Malong Technologies with CEO Dinglong Huang. The company now has 150+ employees and recently completed a B-Round of venture capital funding led by Softbank in China. Accenture also chose Malong as its first investment in China, as part of a strategic alliance announced in July 2018. Matt leads the R&D efforts of the company creating state-of-the-art computer vision technology and products. Malong was selected as a 2018 Technology Pioneer by the World Economic Forum. </br> Prior to Malong, he was at Microsoft for 10 years, working as a senior research development lead at Microsoft Research on computer vision, machine learning, and NLP. In 2018, Matt was recognized by Fast Company as one of the 100 Most Creative People in Business in China. His work has been featured in The Wall Street Journal, Forbes, The New York Times, the Financial Times, PBS Nightly News, CNBC, and The Discovery Channel, among other media. </br> Matt is a proud alumnus of Boston University',
 		},
 
-		rachel_manzelli: {
-			name: 'Rachel Manzelli',
-			bio: '',
-		},
-
 		diane_feddema: {
 			name: 'Diane Feddema',
 			bio: 'Diane Feddema is a principal engineer at Red Hat Inc Canada, in the AI Center Of Excellence.  Diane is currently focused on developing and applying big data techniques for performance analysis, automating these analyses and displaying data in novel ways.  Previously Diane was a performance engineer at the National Center for Atmospheric Research, NCAR, working on optimization and tuning in parallel global climate models.',
@@ -136,6 +131,7 @@ module.exports = {
 			name: 'Mary Dong',
 			bio: "Mary Dong is a sophomore at Brown University concentrating in Applied Math-Computer Science. She's interested in the applications and social impacts of machine learning.",
 			title: 'Deep Learning for ELVO Stroke Detection',
+			abstract: 'Emergent large vessel occlusions (ELVOs) — the most disabling acute ischemic strokes — are primarily diagnosed through CT angiography (CTA), but require trained radiologists for rapid interpretation. Recent deep learning advancements show great promise to automate ELVO detection, accelerate downstream care delivery, and improve patient outcomes. In this project, we tested the fidelity of 2D convolutional neural networks (CNNs) to detect ELVOs. We first took maximum intensity projections of over 1000 brain scans of suspected stroke patients. We then used these preprocessed scans as training data for pre-trained architectures — including Inception v3, DenseNet 121, ResNet-50, and NASNet — as well as custom CNNs. We achieved a peak validation accuracy of 86.3% and a peak AUC of 0.917 with ResNet-50, which we adapted to the task at hand by replacing the top layers with three fully-connected layers. The high accuracy and AUC values achieved demonstrate the feasibility of using a fully automated, deep learning–based ELVO detection system to streamline ELVO diagnosis and treatment. These results can potentially be integrated into a platform that can accelerate and improve ELVO diagnosis and treatment.',
 			headshot: 'mary_dong.jpg',
 		},
 
