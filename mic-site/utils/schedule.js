@@ -105,15 +105,6 @@ module.exports = {
 			time: "11am - noon",
 			title: "Women in MI Panel",
 			type: "panel",
-		}, 
-
-		{
-			rooms: ["mpr"],
-			time: "11:30am - noon",
-			title: "The Sound of Pixels",
-			speaker: "Andrew Rouditchenko, MIT",
-			speaker_id: "andrew_rouditchenko",
-			type: "student-talk",
 		},  
 
 		{
@@ -136,8 +127,8 @@ module.exports = {
 			rooms: ["mpr"],
 			time: "noon - 1pm",
 			title: "Alumni Panel",
-			panelists: ["Ali-Amir Aldan", "Bristy Sikder", "Jacqueline Xu", "Jeremy Nixon", "Michael Chang", "Mohamed Hassan Kane", "Shraman Ray Chaudhuri", "Simanta Gautam", "Moderator: Justin Chen"],
-			panelists_ids: ["ali_amir_aldan", "bristy_sikder", "jacqueline_xu", "jeremy_nixon", "michael_chang", "hassan_kane", "shaman_ray_chaudhuri", "simanta_gautam", "justin_chen"],
+			panelists: ["Ali-Amir Aldan", "Bristy Sikder", "Jacqueline Xu", "Jeremy Nixon", "Michael Chang", "Mohamed Hassan Kane", "Shraman Ray Chaudhuri", "Simanta Gautam", "Surya Bhupatiraju"],
+			panelists_ids: ["ali_amir_aldan", "bristy_sikder", "jacqueline_xu", "jeremy_nixon", "michael_chang", "hassan_kane", "shaman_ray_chaudhuri", "simanta_gautam", "surya_bhupatiraju"],
 			type: "panel",
 		},  
 

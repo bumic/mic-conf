@@ -184,6 +184,7 @@ module.exports = {
 			bio: 'Vitali Petsiuk is a 2nd-year Computer Science Ph.D. student advised by Professor Kate Saenko at Boston University. He does research in Computer Vision and Deep Learning, currently working on Explainable AI, aiming to develop tools for interpretable model analysis. Vitali got his BS and MS in Computer Science from Belarusian State University, where he worked, among other things, on Graph Theory and Image Segmentation.',
 			title: 'RISE: Randomized Input Sampling for Explanation of Black-box Models',
 			abstract: "Deep neural networks are being used increasingly to automate data analysis and decision making, yet their decision-making process is largely unclear and is difficult to explain to the end users. In this paper, we address the problem of Explainable AI for deep neural networks that take images as input and output a class probability. We propose an approach called RISE that generates an importance map indicating how salient each pixel is for the model's prediction. In contrast to white-box approaches that estimate pixel importance using gradients or other internal network state, RISE works on black-box models. It estimates importance empirically by probing the model with randomly masked versions of the input image and obtaining the corresponding outputs. We compare our approach to state-of-the-art importance extraction methods using both an automatic deletion/insertion metric and a pointing metric based on human-annotated object segments. Extensive experiments on several benchmark datasets show that our approach matches or exceeds the performance of other methods, including white-box approaches.",
+			headshot: 'vitali_petsiuk.png',
 		},
 
 		ellick_chan: {
@@ -209,7 +210,8 @@ module.exports = {
 
 		laurens_van_der_maaten: {
 			name: 'Laurens van der Maaten (Facebook)',
-			bio: 'Research Scientist: Facebook Artificial Intelligence Research Team (FAIR)',
+			title: 'From Visual Recognition to Visual Understanding',
+			bio: 'I am a Research Scientist at Facebook AI Research in New York, working on machine learning and computer vision. Before, I worked as an Assistant Professor at Delft University of Technology, as a post-doctoral researcher at UC San Diego, and as a Ph.D. student at Tilburg University. I am interested in a variety of topics in machine learning and computer vision. Currently, I am working on embedding models, large-scale weakly supervised learning, visual reasoning, and cost-sensitive learning.',
 		},
 
 		lenny_grokop: {
@@ -219,13 +221,13 @@ module.exports = {
 
 		ali_amir_aldan: {
 			name: 'Ali-Amir Aldan',
-			bio: 'I graduated MIT in 2017 majoring in course 6-3. And I currently work at an early stage startup Akruta in Palo Alto, CA. We are working with computer vision, high efficiency video compression and audio processing to bring a new way of communication in a home environment. This work has been an exciting part of my life for the past year. Before that I worked at Google as part of Video Search team.',
+			bio: 'Ali-Amir Aldan graduated MIT in 2017 majoring in course 6-3. He is currently working at an early stage startup Akruta in Palo Alto, CA. Akruta works with computer vision, high efficiency video compression and audio processing to bring a new way of communication in a home environment. This work has been an exciting part of his life for the past year. Before that he worked at Google as part of Video Search team.',
 			headshot: 'ali-amir_aldan.jpg',
 		},
 
 		bristy_sikder: {
 			name: 'Bristy Sikder',
-			bio: 'I interested in the Machine Learning Systems and Security. I am currently an intern in DeepMind working with the Virtual Brain Analytics (VBA) team and Safe and Rigorous AI team to better understand and evaluate robustness in reinforcement learning in the domain of agent navigation. Prior to this, I have worked interned at Google Translate, Quora, Yugabyte and Bridgewater. In addition that I am also a medalist in International Olympiad in Informatics and I am passionate about encouraging women to pursue STEM.',
+			bio: 'Bristy Sikder is interested in the Machine Learning Systems and Security. She is currently an intern in DeepMind working with the Virtual Brain Analytics (VBA) team and Safe and Rigorous AI team to better understand and evaluate robustness in reinforcement learning in the domain of agent navigation. Prior to this, she interned at Google Translate, Quora, Yugabyte and Bridgewater. In addition, she is also a medalist in International Olympiad in Informatics and is passionate about encouraging women to pursue STEM.',
 			headshot: 'bristy_sikder.jpg',
 		},
 
@@ -243,7 +245,7 @@ module.exports = {
 
 		justin_chen: {
 			name: 'Justin Chen',
-			bio: 'I first learned the words "artificial intelligence" from my aunt when I was seven and have been dreaming of an AI future ever since. Today, I am the president and director of the Machine Intelligence Community, Inc., which is a non-profit dedicated to fostering the future researchers and engineers in machine intelligence by democratizing knowledge and building community.',
+			bio: 'Justin first learned the words "artificial intelligence" from his aunt when he was seven and has been dreaming of a anime-inspired future ever since. He received both his Bachelor of Arts and Master of Science degrees in computer science from Boston University. During his graduate studies, he extensively researched decentralized asynchronous gradient-based optimization for deep neural networks. When not in class or doing research, he focused intensely on founding the Boston University Machine Intelligence Community. Today, he is the a Director, the CEO, the Founder of the Machine Intelligence Community, Inc., which is a non-profit corporation in the process of becoming 501(c)(3), dedicated to democratizing machine intelligence by connecting communities, promoting diversity, providing mentorship, and developing educational material to empower the future leaders in machine intelligence.',
 			headshot: 'justin_chen.jpg',
 		},
 
@@ -275,7 +277,14 @@ module.exports = {
 			bio: "Jessy is a senior studying EECS and philosophy at MIT. She works on real-world adversarial examples with Labsix, an independent student-run research group, speech learning in Josh Tenenbaum's Computational Cognitive Science Lab. She has also spent time at Google Research NYC, investigating memory for learning long-term dependencies. Outside of research, she organizes HackMIT, works on tech for refugee healthcare, and builds things.",
 			title: "Real-World Adversarial Examples",
 			abstract: "We share two research directions demonstrating how adversarial attacks can be realized in realistic attack settings and threat models. In our first work, Synthesizing Robust Adversarial Examples, we present the first algorithm for synthesizing examples that are adversarial over a chosen distribution of transformations (such as viewpoint shifts and camera noise) and demonstrate that 3D adversarial objects can be realized in the physical world. In our second work, Adversarial Attacks Under Restricted Threat Models, we use natural evolution strategies as a query-efficient algorithm for black-box adversarial examples, for cases where queries to the classifier would be highly costly (e.g. API fees or rate limits). We also develop two algorithms to generate adversarial examples in the partial-information (only top-k predictions given) and further, the label-only (only top-k labels given, without probabilities or scores) cases. Using these methods, we demonstrate the first targeted attack against the Google Cloud Vision API to show that these methods can be applied to real-world, commercial-scale systems.",
-		}
+			headshot: "jessy_lin.png",
+		},
+
+		surya_bhupatiraju: {
+			name: "Surya Bhupatiraju",
+			bio: "Surya Bhupatiraju is a Research Engineer at DeepMind. He graduated from MIT in 2017 with a Bachelors in computer science. In the past, he spent time doing research at MIT, Facebook, and Microsoft Research, and he recently spent a year doing research at Google Brain as a resident. Outside of work, you'll find him either rock climbing, singing along with a ukulele, or listening to too many podcasts.",
+			headshot: "surya_bhupatiraju.jpg"
+		},
 
 
 	}
