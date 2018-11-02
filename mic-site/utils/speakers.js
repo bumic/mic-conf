@@ -242,7 +242,7 @@ module.exports = {
 
 		justin_chen: {
 			name: 'Justin Chen',
-			bio: 'Justin first learned the words "artificial intelligence" from his aunt when he was seven and has been dreaming of a anime-inspired future ever since. He received both his Bachelor of Arts and Master of Science degrees in computer science from Boston University. During his graduate studies, he extensively researched decentralized asynchronous gradient-based optimization for deep neural networks. When not in class or doing research, he focused intensely on founding the Boston University Machine Intelligence Community. Today, he is the a Director, the CEO, the Founder of the Machine Intelligence Community, Inc., which is a non-profit corporation in the process of becoming 501(c)(3), dedicated to democratizing machine intelligence by connecting communities, promoting diversity, providing mentorship, and developing educational material to empower the future leaders in machine intelligence.',
+			bio: 'Justin first learned the words "artificial intelligence" from his aunt when he was seven and has been dreaming of a anime-inspired future ever since. He received both his Bachelor of Arts and Master of Science degrees in computer science from Boston University. During his graduate studies, he extensively researched decentralized asynchronous gradient-based optimization for deep neural networks. When not in class or doing research, he focused intensely on founding the Boston University Machine Intelligence Community. Today, he is a Director, the CEO, the Founder of the Machine Intelligence Community, Inc., which is a non-profit corporation in the process of becoming 501(c)(3), dedicated to democratizing machine intelligence by connecting communities, promoting diversity, providing mentorship, and developing educational material to empower the future leaders in machine intelligence.',
 			headshot: 'justin_chen.jpg',
 		},
 
@@ -287,6 +287,13 @@ module.exports = {
 			name: "Sophie Watson",
 			headshot: "sophie_watson.jpg",
 			bio: 'Dr. Sophie Watson is a software engineer at Red Hat, where she works in an emerging technology group. She has a background in Mathematics and has recently completed a PhD in Bayesian statistics, in which she developed algorithms to estimate intractable quantities quickly and accurately. Since joining Red Hat in 2017, Sophie has focused on applying her data science and statistics skills to solving business problems and informing next-generation infrastructure for intelligent application development.',
+		},
+
+		danil_kirsanov: {
+			name: 'Danil Kirsanov',
+			bio: 'Machine Learning Software Engineer at Facebook',
+			title: 'Machine Learning for Satellite Image Analysis',
+			abstract: 'In this presentation, we overview the ML-assisted techniques for the satellite image processing: improving the open source OpenStreetMap and generating the state-of-the-art population density map.',
 		}
 
 

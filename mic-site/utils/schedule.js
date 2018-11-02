@@ -55,8 +55,9 @@ module.exports = {
 		{
 			rooms: ["lh"],
 			time: "10am - 11:30am",
-			title: "Machine Learning for Satellite Image Analysis",
-			speaker: "Danil Kirsanov, Facebook",
+			title: "Machine Learning for Satellite Image Analysis and From Visual Recognition to Visual Understanding",
+			panelists: ["Danil Kirsanov, Facebook", "Laurens van der Maaten"],
+			panelists_ids: ["danil_kirsanov", "laurens_van_der_maaten"],
 			type: "sponsor-talk",
 		},
 
@@ -115,9 +116,8 @@ module.exports = {
 		{
 			rooms: ["ssr"],
 			time: "11:30am - noon",
-			title: "Learning with text-based games",
-			speaker: "David Tao, McGill University",
-			speaker_id: "ruo_yu_david_tao",
+			title: "The Sounds of Pixels",
+			speaker: "Hang Zhou, MIT",
 			type: "student-talk",
 		},
 
@@ -236,6 +236,24 @@ module.exports = {
 		{
 			rooms: ["ssr"],
 			time: "3pm - 3:30pm",
+			title: "Creating Synthetic Data for Deep Learning Applications",
+			type: "student-talk",
+			speaker: "Mona Jalal, Boston University",
+			speaker_id: "mona_jalal",
+		}, 
+
+		{
+			rooms: ["mpr"],
+			time: "3:30pm - 4pm",
+			title: "Learning with text-based games",
+			speaker: "David Tao, McGill University",
+			speaker_id: "ruo_yu_david_tao",
+			type: "student-talk",
+		},
+
+		{
+			rooms: ["ssr"],
+			time: "3:30pm - 4pm",
 			title: "Deep Learning for ELVO Stroke Detection",
 			type: "student-talk",
 			panelists: ["Mary Dong, Brown University", "Amy Wang, Brown University"],
@@ -244,29 +262,20 @@ module.exports = {
 
 		{
 			rooms: ["mpr"],
-			time: "3:30pm - 4pm",
-			title: "Creating Synthetic Data for Deep Learning Applications",
-			type: "student-talk",
-			speaker: "Mona Jalal, Boston University",
-			speaker_id: "mona_jalal",
-		}, 
-
-		{
-			rooms: ["ssr"],
-			time: "3:30pm - 4pm",
-			title: "Using Quality-of-Life Scores to Guide Prostate Radiation Therapy Dosing",
-			type: "student-talk",
-			speaker: "Giulia Pintea, Simmons University",
-			speaker_id: "giulia_pintea",
-		}, 
-
-		{
-			rooms: ["mpr"],
 			time: "4pm - 4:30pm",
 			title: "Targeted Dropout and Bitrot: Simple and Effective Techniques for Sparsification and Quantization",
 			type: "student-talk",
 			speaker: "Aidan Gomez, University of Oxford",
 			speaker_id: "aidan_gomez"
+		}, 
+
+		{
+			rooms: ["ssr"],
+			time: "4pm - 4:30pm",
+			title: "Using Quality-of-Life Scores to Guide Prostate Radiation Therapy Dosing",
+			type: "student-talk",
+			speaker: "Giulia Pintea, Simmons University",
+			speaker_id: "giulia_pintea",
 		}, 
 
 		{
