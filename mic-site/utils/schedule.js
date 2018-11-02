@@ -21,6 +21,7 @@ module.exports = {
 			time: "9am - 9:10am",
 			title: "Conference Kickoff",
 			speaker: "Justin Chen, MIC",
+			speaker_id: "justin_chen",
 			type: "keynote",
 		},
 
@@ -41,13 +42,6 @@ module.exports = {
 			speaker_id: "leslie_kaelbling",
 			type: "keynote",
 		},
-
-		{
-			rooms: ["wgr"],
-			time: "10am - 11am",
-			title: "Free Space",
-			type: "misc"
-		}, 
 
 		{
 			rooms: ["mpr"],
@@ -89,22 +83,24 @@ module.exports = {
 			time: "11am - noon",
 			title: "Coffee Break",
 			type: "misc",
-		},  
+		}, 
 
 		{
 			rooms: ["mpr"],
+			time: "11am - noon",
+			title: "Women in MI Panel",
+			panelists: ["Kate Saenko", "Jacqueline Xu", "Sophie Watson", "Millie Liu"],
+			panelists_ids: ["kate_saenko", "jacqueline_xu", "sophie_watson", "millie_liu"],
+			type: "panel",
+		},  
+
+		{
+			rooms: ["ssr"],
 			time: "11am - 11:30am",
 			title: "RISE: Randomized Input Sampling for Explanation of Black-box Models",
 			type: "student-talk",
 			speaker: "Vitali Petsiuk, Boston University",
 			speaker_id: "vitali_petsiuk",
-		}, 
-
-		{
-			rooms: ["ssr"],
-			time: "11am - noon",
-			title: "Women in MI Panel",
-			type: "panel",
 		},  
 
 		{
@@ -117,6 +113,15 @@ module.exports = {
 		},
 
 		{
+			rooms: ["ssr"],
+			time: "11:30am - noon",
+			title: "Learning with text-based games",
+			speaker: "David Tao, McGill University",
+			speaker_id: "ruo_yu_david_tao",
+			type: "student-talk",
+		},
+
+		{
 			rooms: ["wgr"],
 			time: "noon - 1:30pm",
 			title: "Lunch",
@@ -126,6 +131,13 @@ module.exports = {
 		{
 			rooms: ["mpr"],
 			time: "noon - 1pm",
+			title: "Women in MI Lunch",
+			type: "lunch",
+		}, 
+
+		{
+			rooms: ["ssr"],
+			time: "noon - 1pm",
 			title: "Alumni Panel",
 			panelists: ["Ali-Amir Aldan", "Bristy Sikder", "Jacqueline Xu", "Jeremy Nixon", "Michael Chang", "Mohamed Hassan Kane", "Shraman Ray Chaudhuri", "Simanta Gautam", "Surya Bhupatiraju"],
 			panelists_ids: ["ali_amir_aldan", "bristy_sikder", "jacqueline_xu", "jeremy_nixon", "michael_chang", "hassan_kane", "shaman_ray_chaudhuri", "simanta_gautam", "surya_bhupatiraju"],
@@ -133,22 +145,8 @@ module.exports = {
 		},  
 
 		{
-			rooms: ["ssr"],
-			time: "noon - 1pm",
-			title: "Women in MI Lunch",
-			type: "lunch",
-		}, 
-
-		{
-			rooms: ["wgr"],
-			time: "1pm - 2pm",
-			title: "Free Space",
-			type: "misc",
-		}, 
-
-		{
 			rooms: ["mpr"],
-			time: "1pm - 1:30pm",
+			time: "1:30pm - 2pm",
 			title: "Your Children and AI",
 			type: "student-talk",
 			speaker: "Olivia Koshy, UC Berkeley",
@@ -157,7 +155,7 @@ module.exports = {
 
 		{
 			rooms: ["lh"],
-			time: "1pm - 2:30pm",
+			time: "1:30pm - 3pm",
 			title: "CurriculumNet: Weakly Supervised Learning from Large-Scale Web Images",
 			speaker: "Matt Scott, Malong",
 			speaker_id: "matt_scott",
@@ -167,7 +165,7 @@ module.exports = {
 
 		{
 			rooms: ["ssr"],
-			time: "1pm - 1:30pm",
+			time: "1:30pm - 2pm",
 			title: "Performance Boosting Methods in Semi-Supervised NLP Neural Net Environments",
 			type: "student-talk",
 			speaker: "Thalia Rossitter, Simmons University",
@@ -176,7 +174,7 @@ module.exports = {
 
 		{
 			rooms: ["mpr"],
-			time: "1:30pm - 2pm",
+			time: "2pm - 2:30pm",
 			title: "TimbreTron: A WaveNet(CycleGAN(CQT(Audio))) Pipeline for Musical Timbre Transfer",
 			type: "student-talk",
 			speaker: "Sheldon Huang, University of Toronto",
@@ -185,7 +183,7 @@ module.exports = {
 		
 		{
 			rooms: ["ssr"],
-			time: "1:30pm - 2pm",
+			time: "2pm - 2:30pm",
 			title: "Moment of change: Predicting Cognitive Restructuring in Online Mental Health Forums",
 			speaker: "Yada Pruksachatkun, NYU",
 			speaker_id: "yada_pruksachatkun",
@@ -194,7 +192,7 @@ module.exports = {
 
 		{
 			rooms: ["mpr"],
-			time: "2pm - 2:30pm",
+			time: "2:30pm - 3pm",
 			title: "The Semantic-Hypnotic Model of Music Perception",
 			type: "student-talk",
 			speaker: "Ari Brown, Tufts University",
@@ -203,7 +201,7 @@ module.exports = {
 
 		{
 			rooms: ["ssr"],
-			time: "2pm - 2:30pm",
+			time: "2:30pm - 3pm",
 			title: "What can artificial intelligence teach economics?",
 			type: "student-talk",
 			speaker: "Guy Aridor, Columbia University",
@@ -212,14 +210,14 @@ module.exports = {
 
 		{
 			rooms: ["wgr"],
-			time: "2pm - 4pm",
+			time: "2:30pm - 4:30pm",
 			title: "Coffee Break",
 			type: "misc",
 		}, 
 
 		{
 			rooms: ["mpr"],
-			time: "2:30pm - 3pm",
+			time: "3pm - 3:30pm",
 			title: "Multilingual Text Search in Image Collection",
 			type: "student-talk",
 			speaker: "Jessica Edwards, Harvard College",
@@ -228,30 +226,12 @@ module.exports = {
 
 		{
 			rooms: ["lh"],
-			time: "2:30pm - 4pm",
+			time: "3pm - 4:30pm",
 			title: "Tensorflow optimizations and performance tuning for Intel platforms",
 			panelists: ["Ellick Chan, Intel", "Jude Shavlik, Intel"],
 			panelists_ids: ["ellick_chan", ""],
 			type: "sponsor-talk",
-		}, 
-
-		{
-			rooms: ["ssr"],
-			time: "2:30pm - 3pm",
-			title: "Creating Synthetic Data for Deep Learning Applications",
-			type: "student-talk",
-			speaker: "Mona Jalal, Boston University",
-			speaker_id: "mona_jalal",
-		}, 
-
-		{
-			rooms: ["mpr"],
-			time: "3pm - 3:30pm",
-			title: "Learning with text-based games",
-			speaker: "David Tao, McGill University",
-			speaker_id: "ruo_yu_david_tao",
-			type: "student-talk",
-		}, 
+		},  
 
 		{
 			rooms: ["ssr"],
@@ -265,10 +245,10 @@ module.exports = {
 		{
 			rooms: ["mpr"],
 			time: "3:30pm - 4pm",
-			title: "Targeted Dropout and Bitrot: Simple and Effective Techniques for Sparsification and Quantization",
+			title: "Creating Synthetic Data for Deep Learning Applications",
 			type: "student-talk",
-			speaker: "Aidan Gomez, University of Oxford",
-			speaker_id: "aidan_gomez"
+			speaker: "Mona Jalal, Boston University",
+			speaker_id: "mona_jalal",
 		}, 
 
 		{
@@ -281,10 +261,12 @@ module.exports = {
 		}, 
 
 		{
-			rooms: ["wgr"],
-			time: "4pm - closing",
-			title: "Free Space",
-			type: "misc",
+			rooms: ["mpr"],
+			time: "4pm - 4:30pm",
+			title: "Targeted Dropout and Bitrot: Simple and Effective Techniques for Sparsification and Quantization",
+			type: "student-talk",
+			speaker: "Aidan Gomez, University of Oxford",
+			speaker_id: "aidan_gomez"
 		}, 
 
 		{
